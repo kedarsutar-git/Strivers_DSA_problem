@@ -61,6 +61,33 @@ def Moores(arr):
         else:
             frq -=1
 
-    return frq
-arr = [0,1,2,0,1,2,2,1,2,2] 
+    return ans
+arr = [0,1,2,0,1,2,2,1,2,2,3,3,3,3,3,3,3,3,3] 
 print(Moores(arr))              
+'''
+Time Complixity : O(n)
+Space Complixity :O(1)
+
+Note : majority element > n/2     n=len(arr)
+'''
+
+# leet code style 
+
+class Solution:
+    def majority(self,nums:list[int]) -> int:
+        frq = 0
+        ans = 0
+        for i in range(len(nums)):
+            if(frq ==0):
+                ans = nums[i]
+
+            if(ans==nums[i]):
+                frq+=1
+
+            else:
+                frq-=1
+
+        return ans 
+nums = [1,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4]
+object = Solution()
+print(object.majority(nums))                        

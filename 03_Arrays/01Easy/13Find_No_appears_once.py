@@ -58,3 +58,16 @@ Space complixity:O(1)
 
 '''
 
+
+# leet code Style 
+class soultion:
+    def Find(self,nums:list[int]) -> int:
+        for i in range(1,len(nums)):
+            if(nums[i-1]!=nums[i]!=nums[i+1]):
+                return nums[i]
+        return -1
+nums = [1,1,2,2,3,3,4,5,5,6,6]
+object = soultion()
+print(object.Find(nums))
+
+

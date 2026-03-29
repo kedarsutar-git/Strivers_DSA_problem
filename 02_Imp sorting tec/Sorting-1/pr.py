@@ -1,15 +1,18 @@
-class Soluntion:
-    def bubbleSort(self,arr):
-        n = len(arr)
-        for i in range(n):
-            for j in range(n-i-1):
-                if(arr[j]> arr[j+1]):
-                    temp = arr[j]
-                    arr[j] = arr[j+1]
-                    arr[j+1] = temp
+def SelectionSort(arr):
+    n = len(arr)
+    for i in range(n):
+        min_index = i
 
-        return arr
-arr = [7,6,5,4,3,21]
-object = Soluntion()
-print(object.bubbleSort(arr))
+        for j in range(i+1,n):
+            if(arr[j]<arr[min_index]):
+                min_index = j
+
+                temp = arr[i]
+                arr[i] = arr[min_index]
+                arr[min_index] = temp
+
+    return arr
+arr = [12,34,57,78,56]
+print(SelectionSort(arr))            
+              
 

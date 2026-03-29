@@ -2,19 +2,19 @@ def QuickSort(arr,start,end):
     if(start<end):
         pivit = partition(arr,start,end)
 
-        QuickSort(arr,start,pivit-1)
-        QuickSort(arr,pivit+1,end)
+        QuickSort(arr,start,pivit-1) # left arr
+        QuickSort(arr,pivit+1,end)   # Right arr
 
 def partition(arr,start,end):
-    index = start-1
-    pivit =arr[end]
+    index = start-1  
+    pivit = arr[end]
 
     for j in range(start,end):
         if(arr[j]<pivit):
             index = index+1
-
             arr[index],arr[j] = arr[j],arr[index]
 
+        
     arr[index+1],arr[end] = arr[end],arr[index+1]        
 
             

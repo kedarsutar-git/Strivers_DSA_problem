@@ -19,12 +19,26 @@ print(arr[:check(arr)])
 def Remove(arr):
     s = set()
     for num in arr:
+        
         s.add(num)
     l = list(set(s))
 
-    return l
+    return l           
 arr = [1,1,2,2,3,3,3,4] 
 
 print(Remove(arr))
-    
 
+
+# leetcode style
+class Solution:
+    def Removedup(self,nums:list[int]) ->list[int]:
+        s = set()
+        for n in nums:
+            s.add(n)
+            l = list(set(s))
+
+        return l
+
+nums = [1,2,3,4,4,5,6]
+object = Solution()
+print(object.Removedup(nums))      

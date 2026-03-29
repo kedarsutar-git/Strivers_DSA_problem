@@ -55,7 +55,7 @@ Space complixity:O(1)
 
 # optimal method 
 
-def Sort123(arr):
+def Sort012(arr):
     n = len(arr)
     low = 0
     mid = 0
@@ -82,9 +82,35 @@ def Sort123(arr):
 
 
 arr = [2,0,2,1,1,0,1,2,0,0]
-print(Sort123(arr)) 
+print(Sort012(arr)) 
 
 '''
 Time Complixity : O(n)
 Space Complixity : O(1)
-'''                   
+'''
+
+# leet code style 
+class Solution:
+    def Sort012(self,nums:list[int]) -> list[int]:
+        start = 0
+        mid = 0 
+        end = len(nums)-1
+        while(mid<=end):
+            if(nums[mid]==0):
+                nums[mid],nums[start] = nums[start],nums[mid]
+
+                mid +=1
+                start +=1
+
+            elif(nums[mid]==1):
+                mid+=1
+
+            elif(nums[mid]==2):
+                nums[mid],nums[end] = nums[end],nums[mid]
+                end-=1
+
+        return nums
+nums = [1,1,1,1,0,1,2,2,2,2,2,0,1,2,0,2,2,2,0,1,0]
+object = Solution()
+print(object.Sort012(nums))                    
+
