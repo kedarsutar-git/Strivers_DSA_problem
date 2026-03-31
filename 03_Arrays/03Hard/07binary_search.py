@@ -18,3 +18,8 @@ class Solution:
 nums = [1,2,3,4,5]
 object = Solution()
 print(object.search(nums,4))    
+
+'''
+Time compixity :O(log(n))
+Space complixity :O(1)
+'''
