@@ -75,7 +75,7 @@ class Solution:
                 elif(Sum>0):
                     k-=1
 
-                else:
+                else:     # sum==0 
                     temp.append([nums[i],nums[j],nums[k]])
                     j+=1
                     k-=1
@@ -95,7 +95,9 @@ space Complixity :O(n)
 
 
 
+           
 
+    
 
 
 

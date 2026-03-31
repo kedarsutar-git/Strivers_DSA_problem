@@ -1,7 +1,7 @@
 '''
 majority element >n//3
 n = len(arr)
-
+  
 '''
 class Solution:
     def Majority(self,nums:list[int]) ->list[int]:
@@ -22,3 +22,5 @@ nums = [1,1,1,2,2,3,3,3]
 object = Solution()
 print(object.Majority(nums))            
                     
+
+                                      
