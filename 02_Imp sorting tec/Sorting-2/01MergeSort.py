@@ -3,10 +3,10 @@ def merge_Sort(arr,start,end):
     if(start<end):
         mid = start +(end - start)//2
 
-        merge_Sort(arr,start,mid)
-        merge_Sort(arr,mid+1,end)
+        merge_Sort(arr,start,mid)   # left array
+        merge_Sort(arr,mid+1,end)   # Right array
 
-        merge(arr,start,mid,end)
+        merge(arr,start,mid,end)    # merge sort call
 
 def merge(arr,start,mid,end):
     temp =[]
