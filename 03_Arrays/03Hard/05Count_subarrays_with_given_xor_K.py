@@ -12,7 +12,7 @@ Important properties in DSA:
 
 1. A^0 = A
 2. A^A = 0
-3. A^B^A = A
+3. A^B^A = B
 4. A^B =B^A
 
 '''
