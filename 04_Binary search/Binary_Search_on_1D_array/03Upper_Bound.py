@@ -39,3 +39,8 @@ class Solution:
 nums = [1,2,2,3]  
 object = Solution()
 print(object.upper_Bound(nums,2))
+
+'''
+Time complixity :O(logn)
+space Complixity :O(1)
+'''

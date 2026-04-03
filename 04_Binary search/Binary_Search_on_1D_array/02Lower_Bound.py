@@ -89,7 +89,7 @@ nums = [1,2,3,3,5,8,8,10,10,11]
 object = Solution()
 print(object.LowerBound(nums,22))
 '''
-Time Complixity:O(nlogn)
+Time Complixity:O(logn)
 Space Complixity :O(1)
 '''
 

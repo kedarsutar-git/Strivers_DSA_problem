@@ -35,7 +35,6 @@ class Solution:
         for i in range(len(nums)):
             if(nums[i] > x):
                 return nums[i-1],nums[i]  
-            
             elif(nums[i]==x):
                 return nums[i],nums[i]
             
