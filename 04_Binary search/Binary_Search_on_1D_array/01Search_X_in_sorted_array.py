@@ -20,3 +20,9 @@ class Solution:
 nums = [1,2,4,6,7,8]
 object = Solution()
 print(object.BinarySearch(nums,8))                
+
+'''
+Time Complixity:O(nlogn)
+Space Complixity :O(1)
+'''
+
