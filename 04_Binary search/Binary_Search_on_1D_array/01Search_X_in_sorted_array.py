@@ -22,7 +22,7 @@ object = Solution()
 print(object.BinarySearch(nums,8))                
 
 '''
-Time Complixity:O(nlogn)
+Time Complixity:O(logn)
 Space Complixity :O(1)
 '''
 

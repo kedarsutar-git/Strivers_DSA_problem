@@ -9,7 +9,7 @@ arr = [3,5,8,15,19] , n = 5
 x = 8
 arr[index] >= x
 arr[2] >= 8
-
+ 
 output is : 2
 
 EX.2:
@@ -18,7 +18,7 @@ arr[index] >= x
 arr[3] >= 9
 
 output is : 3
-
+ 
 EX.3
 x = 16
 
