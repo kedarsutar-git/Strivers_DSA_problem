@@ -52,3 +52,8 @@ class Solution:
 nums = [7,8,1,2,3,4,5,6]
 object = Solution()
 print(object.Search_Rotate_Arr(nums,1))                         
+
+'''
+Time Complixity :O(logn)
+Space complixity:O(1)
+'''

@@ -59,4 +59,9 @@ nums = [4, 5, 6, 7, 1, 2]
 obj = Solution()
 print(obj.find_min(nums))  # Output: 1
 
+'''
+Time Complixity:O(logn)
+Space Complixity:O(1)
+'''
+
 
