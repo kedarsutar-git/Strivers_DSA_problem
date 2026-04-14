@@ -6,6 +6,8 @@ Output: true
 Ex:2
 Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
 Output: false
+
+Note : all rows are sorted and 1st integer of each row is greter then the last integer in the previous row
 '''
 # Brute forece approach
 class Solution:
@@ -29,14 +31,14 @@ class Solution:
         n = len(Matrix[0])
         start = 0
         end = n - 1
-
-        while start <= end:
+        # search for target in row 
+        while(start <= end):
             mid = start + (end - start) // 2
 
-            if Matrix[midRow][mid] == target:
+            if (Matrix[midRow][mid] == target):
                 return True
 
-            elif target > Matrix[midRow][mid]:
+            elif(target > Matrix[midRow][mid]):
                 start = mid + 1
             else:
                 end = mid - 1
@@ -49,17 +51,17 @@ class Solution:
 
         startRow = 0
         endRow = m - 1
-
-        while startRow <= endRow:
+        # search for correct row
+        while(startRow <= endRow):
             midRow = startRow + (endRow - startRow) // 2
 
-            if target >= Matrix[midRow][0] and target <= Matrix[midRow][n - 1]:
+            if(target >= Matrix[midRow][0] and target <= Matrix[midRow][n - 1]):
                 return self.searchInRow(Matrix, target, midRow)
 
-            elif target > Matrix[midRow][n - 1]:
+            elif(target > Matrix[midRow][n - 1]):
                 startRow = midRow + 1
             else:
-                endRow = midRow - 1
+                endRow = midRow - 1 
 
         return False
 
@@ -73,6 +75,13 @@ Time Complixity:O(log(n*m))
 Sapce Complixity:O(1)
 
 '''
+
+
+
+
+
+
+
 
 
 
