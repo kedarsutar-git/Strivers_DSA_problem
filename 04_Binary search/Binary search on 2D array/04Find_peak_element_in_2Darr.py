@@ -42,3 +42,42 @@ Time Complixity:O(n**2)
 Space Complixity:O(1)
 
 '''
+# optimal method
+class Solution:
+    def FindPeakNo(self,nums:list[list[int]]) ->int:
+        m = len(nums)
+        n = len(nums[0])
+        start = 0
+        end = n-1
+
+        while(start<=end):
+            mid = start+(end-start)//2
+            Max_col= 0
+            for i in range(m):
+                if(nums[i][mid]>nums[Max_col][mid]):
+                    Max_col = i 
+            if((mid==0 or nums[Max_col][mid-1]<=nums[Max_col][mid]) and (mid==n-1 or nums[Max_col][mid+1]<=nums[Max_col][mid])):
+                return [Max_col,mid]
+            elif(mid>0 and nums[Max_col][mid-1]>nums[Max_col][mid]):
+                end = mid-1
+            else:
+                start = mid+1
+nums = [[5, 10, 8],
+       [4, 25, 7], 
+       [3, 9,  6]]
+object =Solution()
+print(object.FindPeakNo(nums)) 
+
+'''
+NOte:
+Left condtion:
+mid==0 or nums[Max_col][mid-1]<=nums[Max_col][mid]
+
+Right condition:
+mid==n-1 or nums[Max_col][mid+1]<=nums[Max_col][mid]
+'''
+'''
+Time Complexity: O(m*log(n))
+Space Complexity: O(1)
+
+'''
