@@ -1,4 +1,4 @@
-# leet code style 
+# Brute Force method
 class Solution:
     def Seclar(self,nums:list[int]) -> int:
         nums.sort()

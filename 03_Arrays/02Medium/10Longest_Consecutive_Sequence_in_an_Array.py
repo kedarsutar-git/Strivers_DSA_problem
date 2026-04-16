@@ -15,6 +15,34 @@ Output:
 Explanation:
  The longest sequence of consecutive elements in the array is [0, 1, 2, 3, 4, 5, 6, 7, 8], which has a length of 9.
 '''
+# Brute force mthod
+class Solution:
+    def LongestConsecutive(self,nums:list[int]) ->int:
+        nums.sort()
+        count , ans = 1 ,1
+        prv = nums[0]
+       
+        for i in range(1,len(nums)-1):
+            if(nums[i]==prv+1):
+                count +=1
+
+            elif(nums[i]!=prv):
+                count =1
+            prv = nums[i]
+
+            ans = max(ans,count)
+        return ans
+
+object = Solution()
+nums = [100, 4, 200, 1, 3, 2]
+print(object.LongestConsecutive(nums))               
+'''
+Time Complixity:O(nlogn)
+Space Complixity:O(1)
+'''
+
+
+# optimal method
 import math
 class Solution:
     def logestConsecutive(self,nums:list[int]) -> int:
@@ -42,8 +70,8 @@ object =Solution()
 print(object.logestConsecutive(nums))    
 
 '''
-Time Complixity:O(nlogn)
-space Complixity:(1)
+Time Complixity:O(n)
+space Complixity:O(1)
 '''
 
 

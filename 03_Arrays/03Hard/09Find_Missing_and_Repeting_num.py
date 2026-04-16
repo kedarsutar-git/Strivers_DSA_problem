@@ -22,3 +22,9 @@ class Solution:
 nums = [1, 3, 4, 4, 5, 6, 7, 8]
 obj = Solution()
 obj.FindMissingandRepeting(nums)
+'''
+Time Complexity : O(nlogn) due to sorting
+Space Complexity : O(n) due to set
+'''
+
+
