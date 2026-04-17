@@ -5,10 +5,10 @@
 * * * * *
 * * * * *
 '''
-#for i in range(5):
- #   for j in range(5):
- #       print("*",end=" ")
-  #  print()  
+for i in range(5):
+    for j in range(5):
+        print("*",end=" ")
+    print()  
 
 
 
@@ -20,11 +20,11 @@
 *****
 '''    
 
-#for i in range(5):
-#    for j in range(i+1):
-#        print("*",end="")
+for i in range(5):
+    for j in range(i+1):
+        print("*",end="")
 
-#    print()    
+    print()    
 
 
 
@@ -37,11 +37,11 @@
 12345
 '''   
 
-#for i in range(5):
-#    for j in range(i+1):
-#        print(j+1,end="")
+for i in range(5):
+    for j in range(i+1):
+        print(j+1,end="")
 
-#    print()    
+    print()    
 
 
 
@@ -54,11 +54,11 @@
 55555
 '''
 
-#for i in range(5):
-#    for j in range(i+1):
-#        print(i+1,end="")
+for i in range(5):
+    for j in range(i+1):
+        print(i+1,end="")
 
-#    print()    
+    print()    
 
 
 
@@ -69,11 +69,11 @@
 **
 *
 '''  
-#for i in range(6,0,-1):
-#    for j in range(i-1):
-#        print("*",end="")
+for i in range(6,0,-1):
+    for j in range(i-1):
+        print("*",end="")
 
-#    print()     
+    print()     
 
 
 
@@ -85,12 +85,12 @@
 12
 1
 '''
-#n = int(input("Enter the number:"))
-#for i in range(n+1,0,-1):
- #   for j in range(i-1):
- #       print(j+1,end="")
+n = int(input("Enter the number:"))
+for i in range(n+1,0,-1):
+    for j in range(i-1):
+        print(j+1,end="")
 
- #   print() 
+    print() 
 
 
 
@@ -100,11 +100,11 @@
 321
 4321
 '''
-#n = int(input("Enter the number:"))
-#for i in range(0,n):
-#    for j in range(i+1,0,-1):
-#        print(j,end="")
-#    print()
+n = int(input("Enter the number:"))
+for i in range(0,n):
+    for j in range(i+1,0,-1):
+        print(j,end="")
+    print()
 
 
 
@@ -115,14 +115,14 @@
 4 5 6
 7 8 9 10
 '''
-#n = int(input("Enter the number:"))
-#num = 1
-#for i in range(n):
-#    for j in range(i+1,0,-1):
-#        print(num,end="")
-#        num = num+1
+n = int(input("Enter the number:"))
+num = 1
+for i in range(n):
+    for j in range(i+1,0,-1):
+        print(num,end="")
+        num = num+1
 
-#    print()    
+    print()    
 
 
 

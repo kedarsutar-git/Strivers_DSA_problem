@@ -53,7 +53,7 @@ class Solution:
         while(start<=end):
             mid = start+(end-start)//2
             Max_col= 0
-            for i in range(m):
+            for i in range(n):
                 if(nums[i][mid]>nums[Max_col][mid]):
                     Max_col = i 
             if((mid==0 or nums[Max_col][mid-1]<=nums[Max_col][mid]) and (mid==n-1 or nums[Max_col][mid+1]<=nums[Max_col][mid])):
@@ -69,7 +69,7 @@ object =Solution()
 print(object.FindPeakNo(nums)) 
 
 '''
-NOte:
+Note:
 Left condtion:
 mid==0 or nums[Max_col][mid-1]<=nums[Max_col][mid]
 
@@ -81,3 +81,4 @@ Time Complexity: O(m*log(n))
 Space Complexity: O(1)
 
 '''
+
