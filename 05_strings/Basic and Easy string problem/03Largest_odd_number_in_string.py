@@ -14,3 +14,10 @@ class Solution:
 s = "003047987887"
 object = Solution()
 print(object.LargestOddNo(s))               
+
+'''
+Time Complixity:O(n)
+space Complixity:O(1)
+'''
+
+

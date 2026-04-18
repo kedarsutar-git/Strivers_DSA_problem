@@ -11,3 +11,8 @@ if(rev == dup):
 
 else:
     print("The number is not palindrome")    
+
+'''
+Time Complexity:O(logn)
+Space Complexity:O(1)
+'''

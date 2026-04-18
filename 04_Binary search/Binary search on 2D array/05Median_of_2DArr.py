@@ -41,12 +41,5 @@ print(object.Median(nums))
 Time Complexity: O(M*N*(log(M*N)))
 Space Complexity: O(M*N)
 ''' 
-a = int(input("Enter the number:"))              
-b = int(input("Enter the number:"))              
-c = int(input("Enter the number:"))
-D =  {} 
-s = ("kedar","python","Java")
-D[a] = s[0]
-D[b] = s[1] 
-D[c] = s[2]           
+      
 

@@ -8,4 +8,7 @@ while(num>0):
     reversed = (reversed*10) + m
 
     print(reversed)
-
+'''
+Time Complixity:O(logn)
+Space Complxity:O(1)
+'''

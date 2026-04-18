@@ -7,6 +7,10 @@ def Count(n):
     return count    
 n ="23923929"
 print(Count(n))
+'''
+Time Complixity:O(n)
+Sapce complixity:O(1)
+'''
 
 
 

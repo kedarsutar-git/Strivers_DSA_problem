@@ -14,8 +14,8 @@ object = Solution()
 print(object.Sq_root(23))  
 
 '''
-Time complixity:O(n)
-Space ComplixityLO(1)
+Time Complexity:O(n)
+Space ComplexityLO(1)
 '''
 
 # Use Binary Search
@@ -41,7 +41,7 @@ class Solution:
 object =Solution()
 print(object.sqr_root(25))
 '''
-Time Complixirt:O(logn)
-Space Complixity:O(1)
+Time Complexity:O(logn)
+Space Complexity:O(1)
 '''
             

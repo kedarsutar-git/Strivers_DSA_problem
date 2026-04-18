@@ -7,6 +7,7 @@ for i in range(2,n):
     else:
         print("The number is prime")    
 
-
-
- 
+'''
+Time Complexity:O(n)
+Space Complexity
+'''
