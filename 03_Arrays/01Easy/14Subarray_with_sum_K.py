@@ -15,8 +15,8 @@ arr = [1,2,3,4,6,7,8]
 print(Subarray(arr))
 
 '''
-Time complixity:O(n**2)
-space complixity:O(1)
+Time complexity:O(n**2)
+space complexity:O(1)
 '''
 
 # optimal method(prefix sum method):
@@ -62,4 +62,9 @@ class Solution:
 
 nums = [9, 4, 20, 3, 10, 5]         
 object = Solution()
-print(object.SubArr(nums,33))       
+print(object.SubArr(nums,33))     
+
+'''
+Time Compexity:O(n**2)
+Space Complexity:O(1)
+'''

@@ -21,8 +21,8 @@ nums= [3,1,-2,-5,2,-4]
 object = Solution()
 print(object.Rearrange(nums))
 '''
-Time Complixity:O(n) +O(n/2)
-Space complixity: O(n/2)+O(n/2) = O(n)
+Time Complexity:O(n) +O(n/2)
+Space complexity: O(n/2)+O(n/2) = O(n)
  '''
 
 # optimal method
@@ -45,8 +45,8 @@ nums = [3,1,-2,-5,2,-4]
 object = Solution()
 print(object.rearrange(nums))        
 '''
-Time complixity : O(n)
-Space Complixity: O(n)
+Time complexity : O(n)
+Space Complexity: O(n)
 
 '''
 

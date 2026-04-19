@@ -30,4 +30,8 @@ def bubbleSort(arr):
 
     return arr
 arr = [12,332,1,34,21,43,56]
-print(bubbleSort(arr))            
+print(bubbleSort(arr))    
+'''
+Time Complexity:O(n**2)
+Space Complexity:O(1)
+'''        

@@ -55,8 +55,8 @@ arr = [1,1,2,2,3,4,4,5,5]
 object =Solution()
 print(object.Find(arr))
 '''
-Time complixity:O(log(n))
-Space complixity:O(1)
+Time complexity:O(log(n))
+Space complexity:O(1)
 
 '''
 

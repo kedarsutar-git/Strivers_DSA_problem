@@ -17,8 +17,8 @@ object =Solution()
 print(object.RotateMatrix(nums))
 
 '''
-Time Complixity :O(n**2)
-Space Complixity :O(n**2)
+Time Complexity :O(n**2)
+Space Complexity :O(n**2)
 '''        
 
 # optimal method
@@ -53,6 +53,6 @@ nums = [[1, 2,  3, 4],
 object =Solution()
 print(object.RotateMatrix(nums))  
 '''
-Time complixity :O(n**2) + O(n)
-space Complixity :O(1)
+Time complexity :O(n**2) + O(n)
+space Complexity :O(1)
 '''

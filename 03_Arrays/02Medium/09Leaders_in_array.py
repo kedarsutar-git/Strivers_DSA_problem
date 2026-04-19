@@ -18,8 +18,8 @@ object = Solution()
 print(object.Leaders_Arr(nums)) 
 
 '''
-Time Complixity :O(n**2)
-space Complixity:O(n)
+Time Complexity :O(n**2)
+space Complexity:O(n)
 '''
 
 # optimal method
@@ -39,8 +39,8 @@ nums = [10,22,12,3,0,6]
 object = Solution()
 print(object.Leaders(nums))
 '''
-Time Complixity:O(n)
-Sapce Complixity:O(n)
+Time Complexity:O(n)
+Sapce Complexity:O(n)
 '''
 
 

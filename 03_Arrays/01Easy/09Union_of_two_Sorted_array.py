@@ -18,8 +18,8 @@ nums2 = [1,8,9,10,11,23,98]
 object = Solution()
 print(object.union(nums1,nums2))     
 '''
-Time Complxity:O(n)
-Space Complixity:O(n)
+Time Complexity:O(n)
+Space Complexity:O(n)
 '''       
 
 

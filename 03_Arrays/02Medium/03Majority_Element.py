@@ -15,8 +15,8 @@ arr = [1,2,1,2,1,2,2,2]
 print(Maj(arr))                
 
 '''
-Time Complixity : O(n**2)
-Space Complixity: O(1)
+Time Complexity : O(n**2)
+Space Complexity: O(1)
 '''
 
 
@@ -42,37 +42,11 @@ arr = [0,1,2,0,1,2,2,1,2,2]
 print(Majority(arr))
     
 '''
-Time Complixity : O(nlog(n))
-Space Complixity : O(1)
+Time Complexity : O(nlog(n))
+Space Complexity : O(1)
 '''  
 
 # optimal method (Moores Voting Algorithm)
-def Moores(arr):
-    n = len(arr)
-    frq = 0 
-    ans = 0
-    for i in range(n):
-        if(frq ==0):
-            ans= arr[i]
-
-        if(ans== arr[i]):
-            frq +=1 
-
-        else:
-            frq -=1
-
-    return ans
-arr = [0,1,2,0,1,2,2,1,2,2,3,3,3,3,3,3,3,3,3] 
-print(Moores(arr))              
-'''
-Time Complixity : O(n)
-Space Complixity :O(1)
-
-Note : majority element > n/2     n=len(arr)
-'''
-
-# leet code style 
-
 class Solution:
     def majority(self,nums:list[int]) -> int:
         frq = 0
@@ -90,4 +64,13 @@ class Solution:
         return ans 
 nums = [1,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4]
 object = Solution()
-print(object.majority(nums))                        
+print(object.majority(nums))         
+'''
+Time Complexity : O(n)
+Space Complexity :O(1)
+
+Note : majority element > n/2     n=len(arr)
+'''
+
+
+                    

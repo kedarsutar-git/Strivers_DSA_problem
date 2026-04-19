@@ -28,6 +28,6 @@ object = Solution()
 print(object.Removedup(nums))   
 
 '''
-Time ComplixityO(n)
-Space Complxity(n)
+Time ComplexityO(n)
+Space Complexity(n)
 '''

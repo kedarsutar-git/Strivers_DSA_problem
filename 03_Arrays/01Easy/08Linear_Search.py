@@ -11,6 +11,6 @@ nums = [1,2,3,4,5,43]
 object = Solution()
 print(object.linerSearch(nums,34))  
 '''
-Time Complixity:O(n)
-Space Complixity:O(1)
+Time Complexity:O(n)
+Space Complexity:O(1)
 '''              

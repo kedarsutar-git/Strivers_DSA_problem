@@ -1,17 +1,15 @@
 # Brute force method 
-def TwoSum(arr):
-    n = len(arr)
-    tar = 10
-    for i in range(n):
-        for j in range(i+1,n):
-            arr[i]+arr[j]
-            if(arr[i]+arr[j]==tar):
-                return 1
 
-            else:
-                return 0
-arr = [1,2,3,4,5,6]
-print(TwoSum(arr))    
+class Solution:
+    def Twosum(self,nums:list[int],tar:int) -> int:
+        for i in range(len(nums)):
+            for j in range(i,len(nums)):
+                if(nums[i]+nums[j]==tar):
+                    return 1
+                return -1
+nums = [1,2,3,4,5,6]
+object  = Solution()
+print(object.Twosum(nums,10))
    
 '''
 Time Complixity: O(n**2)
@@ -34,19 +32,9 @@ nums = [1,2,3,4,5,6]
 object = Solution()
 print(object.TwoSum(nums))
 '''
-Time Complixity:O(n)
-Space Complixity:O(n)
+Time Complexity:O(n)
+Space Complexity:O(n)
 '''
 
-# leet code Style 
-class Solution:
-    def Twosum(self,nums:list[int],tar:int) -> int:
-        for i in range(len(nums)):
-            for j in range(i,len(nums)):
-                if(nums[i]+nums[j]==tar):
-                    return 1
-                return -1
-nums = [1,2,3,4,5,6]
-object  = Solution()
-print(object.Twosum(nums,10))
+
 

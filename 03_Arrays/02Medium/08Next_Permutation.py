@@ -37,7 +37,7 @@ object = Solution()
 print(object.NextPermutation(nums)) 
 
 '''
-Time Complixity : O(n)
-Space Complixity : O(1)
+Time Complexity : O(n)
+Space Complexity : O(1)
 
 '''

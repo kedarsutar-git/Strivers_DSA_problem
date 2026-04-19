@@ -36,8 +36,8 @@ obj = Solution()
 print(obj.SetMatrix(nums))
 
 '''
-Time Complixity:O(n**3)
-space Complixity :O(n**2)
+Time Complexity:O(n**3)
+space Complexity :O(n**2)
 '''
 
 
@@ -67,8 +67,8 @@ object = Solution()
 print(object.SetMatrix(nums))
 
 '''
-Time Complixity:O(2 X row X col)
-space complixith :O(rows) +O(cols)
+Time Complexity:O(2 X row X col)
+space complexith :O(rows) +O(cols)
 '''
 
 

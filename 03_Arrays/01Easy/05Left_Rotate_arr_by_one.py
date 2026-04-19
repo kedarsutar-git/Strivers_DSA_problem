@@ -12,6 +12,6 @@ nums = [10,11,12,13,14,15]
 object = Soution()
 print(object.L_Rotate(nums))   
 '''
-Time Complixity:O(n)
-Space Complixity(n)
+Time Complexity:O(n)
+Space Complexity(n)
 '''  

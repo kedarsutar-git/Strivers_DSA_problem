@@ -14,6 +14,6 @@ num2 = [1,3,5,6,8]
 object = Solution()
 print(object.intersection(num1,num2))    
 '''
-Time Complxity:(n**2)
-Space Complxity:(n)
+Time Complexity:(n**2)
+Space Complexity:(n)
 '''      

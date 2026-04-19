@@ -13,3 +13,7 @@ def sub_arr(arr):
 
 arr = [-2,1,-3,4,-1,2,1,-5,4] 
 print(sub_arr(arr))
+'''
+Time Complexity:(n)
+Sapce Complexity:O(1)
+'''

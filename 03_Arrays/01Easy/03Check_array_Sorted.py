@@ -12,6 +12,6 @@ nums = [12,13,14,15,16,17,18,19,2]
 object = solution()
 print(object.Check(nums))
 '''
-Time Complixity:O(n)
-Space Complixity:O(1)
+Time Complexity:O(n)
+Space Complexity:O(1)
 '''

@@ -40,6 +40,6 @@ obj = Solution()
 arr = [1, 2, 3, 4, 5]
 print(obj.leftRotate(arr, 2))
 '''
-Time Complixity:O(n)
-Space Complixity:O(1)
+Time Complexity:O(n)
+Space Complexity:O(1)
 '''

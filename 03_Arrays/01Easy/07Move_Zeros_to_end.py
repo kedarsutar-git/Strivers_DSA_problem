@@ -14,8 +14,8 @@ nums = [1,2,3,4,0,0,20,4,3,0]
 object = Solution()
 print(object.MoveZerosToend(nums))    
 '''
-Time complixity:O(nlogn)
-Space Complixity:O(1)
+Time complexity:O(nlogn)
+Space Complexity:O(1)
 ''' 
 
 
@@ -34,8 +34,8 @@ obj.movezero(nums)
 print(nums)
 
 '''
-Time Complixity:O(n)
-Space Complixity:O(1)
+Time Complexity:O(n)
+Space Complexity:O(1)
 '''
       
 

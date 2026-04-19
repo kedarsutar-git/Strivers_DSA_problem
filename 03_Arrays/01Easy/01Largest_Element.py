@@ -12,8 +12,8 @@ obj = Solution()
 print(obj.Largest(nums))   
             
 '''
-Time Complixity:(n)
-Sapce Complixity:(1)
+Time Complexity:(n)
+Sapce Complexity:(1)
 '''            
 
 

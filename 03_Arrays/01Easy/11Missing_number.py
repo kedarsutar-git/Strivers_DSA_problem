@@ -8,6 +8,6 @@ nums = [1,3,4,5,6,7]
 object = Solution()
 print(object.missingnum(nums))      
 '''
-Time Complixity:O(1)
-Space Complixity:O(1)
+Time Complexity:O(1)
+Space Complexity:O(1)
 '''  

@@ -14,8 +14,8 @@ object =Solution()
 print(object.Seclar(nums))   
 
 '''
-Time Complixity:O(logn*n)
-space Complixity:O(1)
+Time Complexity:O(logn*n)
+space Complexity:O(1)
 '''
 
 

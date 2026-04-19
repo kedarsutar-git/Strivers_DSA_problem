@@ -37,8 +37,8 @@ object = Solution()
 nums = [100, 4, 200, 1, 3, 2]
 print(object.LongestConsecutive(nums))               
 '''
-Time Complixity:O(nlogn)
-Space Complixity:O(1)
+Time Complexity:O(nlogn)
+Space Complexity:O(1)
 '''
 
 
@@ -70,8 +70,8 @@ object =Solution()
 print(object.logestConsecutive(nums))    
 
 '''
-Time Complixity:O(n)
-space Complixity:O(1)
+Time Complexity:O(n)
+space Complexity:O(1)
 '''
 
 

@@ -14,6 +14,10 @@ def selectionsort(arr):
     return arr
 
 arr = [12,45,34,89,54,32,87]
-print(selectionsort(arr))        
+print(selectionsort(arr))    
+'''
+Time Complexity:O(n)
+Space complexity:O(1)
+'''    
         
       

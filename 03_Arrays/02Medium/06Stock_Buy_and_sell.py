@@ -16,6 +16,6 @@ object = Solution()
 print(object.Stock(nums))            
 
 '''
-Time complixity:O(n)
-Space Complixity:O(1)
+Time complexity:O(n)
+Space Complexity:O(1)
 '''
