@@ -25,7 +25,6 @@ Even after all possible rotations of "hello", we cannot form "lohelx" due to the
 class Solution:
     def CheckString(self,s:str,goal:str):
         result = s+s
-        
         if(len(s)!=len(goal)):
             return False
         

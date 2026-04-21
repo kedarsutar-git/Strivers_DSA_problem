@@ -36,4 +36,9 @@ class Solution:
 s = "paper" 
 t = "title" 
 object = Solution()
-print(object.IsomorphicString(s,t))       
+print(object.IsomorphicString(s,t)) 
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+'''
