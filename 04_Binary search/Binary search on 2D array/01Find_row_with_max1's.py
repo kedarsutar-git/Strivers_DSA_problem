@@ -36,8 +36,8 @@ nums = [[1,1,1,0],[1,1,1,1],[0,0,0,0],[1,0,0,0]]
 object = Solution()
 print(object.Find_row(nums))            
 '''
-Time complixity:O(m*n)
-space complixity:O(1)
+Time complexity:O(m*n)
+space complexity:O(1)
 '''
 
 class Solution:
@@ -57,7 +57,7 @@ object = Solution()
 print(object.Find_row(nums))  
 
 '''
-Time complixity:O(m+n)
-space complixity:O(1)
+Time complexity:O(m+n)
+space complexity:O(1)
 '''
 

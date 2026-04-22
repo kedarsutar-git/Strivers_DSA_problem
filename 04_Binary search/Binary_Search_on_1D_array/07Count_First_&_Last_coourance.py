@@ -96,3 +96,7 @@ class Solution:
 nums = [2, 2 , 3 , 3 , 3 , 3 , 3 , 4] 
 object = Solution()
 print(object.Count_First_last_occ(nums,3))               
+'''
+Time Complexity:O(logn)
+Space Complexity:O(1)
+'''

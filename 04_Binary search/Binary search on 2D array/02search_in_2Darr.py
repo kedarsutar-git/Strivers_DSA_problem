@@ -21,8 +21,8 @@ Matrix = [[3,4,7,9],[12,13,16,18],[20,21,23,29]]
 object = Solution()
 print(object.SearchMatrix(Matrix,20))            
 '''
-Time Complixity:(n*m)
-space Complixity:O(1)
+Time Complexity:(n*m)
+space Complexity:O(1)
 '''
 
 # Optimal method
@@ -71,8 +71,8 @@ obj = Solution()
 print(obj.search2DMatrix(Matrix, 99))   
 
 '''
-Time Complixity:O(log(n*m))
-Sapce Complixity:O(1)
+Time Complexity:O(log(n*m))
+Sapce Complexity:O(1)
 
 '''
 

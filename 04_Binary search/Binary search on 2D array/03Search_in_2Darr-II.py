@@ -56,7 +56,7 @@ Matrix = [[3,4,7,9],[12,13,16,18],[20,21,23,29]]
 object = Solution()
 print(object.SearchIn2Darr(Matrix,20))     
 '''
-Time Complixity:O(m+n)
-space Complixity:O(1)
+Time Complexity:O(m+n)
+space Complexity:O(1)
 '''
 

@@ -36,8 +36,8 @@ object = solution()
 print(object.First_last_occurence(nums,8))    
 
 '''
-Time Complixity :O(n)
-Space Complixity :O(1)
+Time Complexity :O(n)
+Space Complexity :O(1)
 
 '''
 # Optimal method
@@ -93,7 +93,7 @@ object = Solution()
 print(object.searchRange(nums,3))           
 
 '''
-Time Complixity :O(logn)
-Space complixity :O(1)
+Time Complexity :O(logn)
+Space complexity :O(1)
 '''
                                 

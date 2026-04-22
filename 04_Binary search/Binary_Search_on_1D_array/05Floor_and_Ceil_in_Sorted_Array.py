@@ -44,7 +44,7 @@ object = Solution()
 print(object.Floor_Ceil(nums,25))    
 
 '''
-Time Complixity:O(n)
-space Complixity :O(1)
+Time Complexity:O(n)
+space Complexity :O(1)
 '''
 

@@ -41,6 +41,6 @@ object = Solution()
 print(object.upper_Bound(nums,2))
 
 '''
-Time complixity :O(logn)
-space Complixity :O(1)
+Time complexity :O(logn)
+space Complexity :O(1)
 '''

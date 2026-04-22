@@ -36,8 +36,8 @@ object = Solution()
 print(object.Search_insert_postion(nums,7))        
 
 '''
-Time Complixity :O(logn)
-Space Complixity :O(1)
+Time Complexity :O(logn)
+Space Complexity :O(1)
 '''
             
 

@@ -61,8 +61,8 @@ object = Solution()
 print(object.LowerBound(nums,16))                
         
 '''
-Time Complixity :O(n)
-Space Complixity :O(1)
+Time Complexity :O(n)
+Space Complexity :O(1)
 '''    
 
 # Optimal method (using Binary search)
@@ -89,8 +89,8 @@ nums = [1,2,3,3,5,8,8,10,10,11]
 object = Solution()
 print(object.LowerBound(nums,22))
 '''
-Time Complixity:O(logn)
-Space Complixity :O(1)
+Time Complexity:O(logn)
+Space Complexity :O(1)
 '''
 
 
