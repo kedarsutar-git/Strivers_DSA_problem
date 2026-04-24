@@ -13,7 +13,10 @@ class Solution:
 arr = [1,2,3,4,5]
 object =Solution()
 print(object.leftRotateArr(arr))    
-
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+'''
 
 
 # optimal approach
