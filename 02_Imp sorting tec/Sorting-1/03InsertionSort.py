@@ -1,7 +1,6 @@
 def insertion_sort(arr):
-    n = len(arr)
 
-    for i in range(1, n):
+    for i in range(1, len(arr)):
         key = arr[i]        # element to be inserted
         j = i - 1
 
@@ -17,7 +16,6 @@ def insertion_sort(arr):
 
 arr = [12,34,56,21,43,54] 
 print(insertion_sort(arr))    
-   
  
 
 

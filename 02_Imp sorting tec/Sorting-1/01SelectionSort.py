@@ -10,7 +10,7 @@ def selectionsort(arr):
         temp = arr[i]
         arr[i] = arr[min_index]
         arr[min_index] = temp
-
+        
     return arr
 
 arr = [12,45,34,89,54,32,87]

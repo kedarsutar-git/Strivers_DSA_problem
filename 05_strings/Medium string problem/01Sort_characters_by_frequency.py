@@ -24,21 +24,26 @@ a → 4
 j → 2
 r → 1
 Characters are sorted by decreasing frequency. In case of ties, alphabetically.
-
 '''
-class Solution(object):
-    def frequencySort(self, s):
-        from collections import Counter
-        return ''.join(char * freq for char, freq in Counter(s).most_common())
-    
-s = "tree"
+
+class Solution:
+    def SortChar(self,s:str) -> list[int]:
+        S = set()
+        for i in range(len(s)):
+            S.add(s[i])
+            l = list(set(S))
+            l.sort()
+
+        return l
+s = "raaaajj"  
 object =Solution()
-print(object.frequencySort(s))    
+print(object.SortChar(s))
+
 '''
 Time Complexity:O(n)
-Space Complexity:O(n)
-
+Space Complexity:O(n) # for set
 '''
+            
 
 
 
