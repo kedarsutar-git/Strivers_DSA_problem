@@ -8,7 +8,7 @@ nums = [1,1,2,2,3,3,4,5,5,6,6]
 object = soultion()
 print(object.Find(nums))
 '''Time complexity:O(n)
-    Space Complexity:O(1)
+   Space Complexity:O(1)
 '''
 
 
