@@ -3,11 +3,11 @@
 class Solution:
     def Twosum(self,nums:list[int],tar:int) -> int:
         for i in range(len(nums)):
-            for j in range(i,len(nums)):
+            for j in range(i+1,len(nums)):
                 if(nums[i]+nums[j]==tar):
                     return 1
-                return -1
-nums = [1,2,3,4,5,6]
+        return -1
+nums = [1,2,3,4,5,112]
 object  = Solution()
 print(object.Twosum(nums,10))
    
@@ -38,3 +38,7 @@ Space Complexity:O(n)
 
 
 
+
+
+            
+        

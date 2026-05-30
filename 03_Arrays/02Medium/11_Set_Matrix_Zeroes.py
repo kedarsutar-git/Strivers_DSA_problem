@@ -1,3 +1,23 @@
+'''
+Input: matrix=[[1,1,1],
+               [1,0,1],
+               [1,1,1]]
+Output: [[1,0,1],
+         [0,0,0],
+         [1,0,1]]
+Explanation: Since matrix[2][2]=0.Therfore the 2nd column and 2nd row wil be set to 0.
+
+Input: matrix=[[0,1,2,0],
+               [3,4,5,2],
+               [1,3,1,5]]
+Output:[[0,0,0,0],
+        [0,4,5,0],
+        [0,3,1,0]]
+Explanation:Since matrix[0][0]=0 and matrix[0][3]=0. Therefore 1st row, 1st column and 4th column will be set to 0
+'''
+
+
+
 # Brute force method
 
 class Solution:
@@ -56,7 +76,7 @@ class Solution:
 
         for i in range(row):
             for j in range(col):
-                if(rows[i] or cols[j]):
+                if(rows[i]==1 or cols[j]==1):
                     nums[i][j]=0
         return nums            
 nums = [[1,1,1,1],
@@ -72,4 +92,29 @@ space complexith :O(rows) +O(cols)
 '''
 
 
+class Solution:
+    def SetMatrixZeros(self,nums:list[list[int]]) -> list[list[int]]:
+        row = len(nums)
+        col = len(nums[0])
+        rows = [0]*len(nums)
+        cols = [0]*len(nums[0])
+
+        for i in range(row):
+            for j in range(col):
+                if(nums[i][j]==0):
+                    rows[i]=1
+                    cols[j]=1
+
+        for i in range(row):
+            for j in range(col):
+                if(rows[i]==1 or cols[j]==1):
+                    nums[i][j]=0
+
+        return nums                        
+nums = [[1,1,1,1],
+        [1,0,0,1],
+        [1,1,0,1],
+        [1,1,0,1]] 
+object = Solution()
+print(object.SetMatrixZeros(nums))
        

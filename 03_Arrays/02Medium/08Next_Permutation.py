@@ -10,7 +10,7 @@ class Solution:
         # Step 2 :In the array there are not pivot then reverse the array
         if(Pivot == -1):
             i = 0
-            j = len(nums)
+            j = len(nums)-1
             while(i<=j):
                 nums[i],nums[j] = nums[j],nums[i]
                 i+=1
@@ -41,3 +41,6 @@ Time Complexity : O(n)
 Space Complexity : O(1)
 
 '''
+
+
+                                  

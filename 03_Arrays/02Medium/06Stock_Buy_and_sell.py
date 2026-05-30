@@ -5,7 +5,7 @@ class Solution:
         BestBuy = nums[0]
         for i in range(1,len(nums)):
             if(nums[i]>BestBuy):
-                MaxProfit = max(MaxProfit,nums[i])
+                MaxProfit = max(MaxProfit,nums[i]-BestBuy)
 
             BestBuy = min(BestBuy,nums[i])
 
@@ -17,5 +17,6 @@ print(object.Stock(nums))
 
 '''
 Time complexity:O(n)
-Space Complexity:O(1)
+Space Complexity:O(1) 
 '''
+ 
