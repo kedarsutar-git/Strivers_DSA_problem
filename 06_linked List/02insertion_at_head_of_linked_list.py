@@ -15,3 +15,17 @@ class Solution:
         head = newNode
         return head
 
+
+head = Node(10)
+head.next = Node(20)
+head.next.next = Node(30)
+
+object =Solution()
+head = object.insertionAtHead(head,50)
+# printing the linked list
+current= head
+while current is not None:
+    print(current.data,end ="->")
+    current = current.next
+
+print("None")
