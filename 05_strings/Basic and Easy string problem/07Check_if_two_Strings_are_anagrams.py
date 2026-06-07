@@ -12,21 +12,16 @@ Explanation: Since the count of U and T  is not equal in both strings.
 '''
 
 class Solution:
-    def anagrams(self,s:str,t:str) -> bool:
+    def anagrams(self,s:str,t:str) ->bool:
+        if(len(s)==len(t)  and sorted(s)==sorted(t)):
+            return True 
         
-        if(len(s)!=len(t)):
-            return False
-        
-        if(sorted(s)==sorted(t)):
-            return True
-        return False    
-                
-        
-                      
-s = "CAT"
-t = "ACT"
+        return False 
+s = "RULES"
+t = "LESRT" 
 object =Solution()
-print(object.anagrams(s,t))   
+
+print(object.anagrams(s,t)) 
  
 '''
 Time Complexity:O(NlogN)
@@ -34,5 +29,5 @@ space Complexity:O(1)
 
 '''
 
-
+   
      

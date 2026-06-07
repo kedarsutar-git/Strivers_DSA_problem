@@ -23,19 +23,21 @@ Even after all possible rotations of "hello", we cannot form "lohelx" due to the
          
 '''
 class Solution:
-    def CheckString(self,s:str,goal:str):
-        result = s+s
-        if(len(s)!=len(goal)):
-            return False
+    def IfRotate(self,s:str,goal:str) ->bool:
+        s1 = s+s
+        if(goal in s1 and len(goal)==len(s)):
+            return True 
         
-        return goal in result
-             
+        return False 
+    
 s = "rotation"
 goal = "tionrota"
-object =Solution()
-print(object.CheckString(s,goal))
+object =Solution() 
+print(object.IfRotate(s,goal))
+   
 '''
 Time Comlexity:O(1)
 Space Complexity:O(1)
 
 '''
+
