@@ -80,16 +80,4 @@ Space Complexity:O(1)
 '''
 
 
-class Solution:
-    def removeElement(self, nums: list[int], val: int) -> int:
-        arr = [] 
-        for num in nums:
-            if(val!=num):
-                arr.append(num)
-
-                result = len(arr)
-        return result
-    
-nums = [3,2,2,3]
-object =Solution()
-print(object.removeElement(nums,3))    
+ 
