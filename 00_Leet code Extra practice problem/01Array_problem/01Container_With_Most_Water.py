@@ -79,33 +79,7 @@ Time Complexity:O(n)
 Space Complexity:O(1)
 '''
 
-import math
 
-class Solution:
-    def vowelConScore(self,s:str) ->int:
-        vowel = ["a","e","i","o","u"]
-        v = 0
-        c = 0
-        for lett in s:
-            if(lett.lower() in vowel):
-                v+=1
-
-            elif(lett.isalpha()):
-                c+=1
-
-            score = math.floor(v/c)
-
-        return score
-
-s = "cooear"
-object =Solution()
-print(object.vowelConScore(s))
-
-'''
-Time Complexity:O(n)
-Space Complexity:O(1)
-
-'''
 
 
    
