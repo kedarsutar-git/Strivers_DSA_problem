@@ -14,3 +14,5 @@ print(object.linerSearch(nums,34))
 Time Complexity:O(n)
 Space Complexity:O(1)
 '''              
+
+               

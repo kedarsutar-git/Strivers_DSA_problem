@@ -1,18 +1,16 @@
 class Solution:
-    def leftRotateArr(self,arr:list[int]) ->int:
-        k = 3
-        n = len(arr)
-        temp = arr[0:k]
+    def leftRotateArr(self,nums:list[int] ,k:int) ->int:
+          
+        temp = nums[0:k]
+        for i in range(k,len(nums)):
+            nums[i-k]=nums[i]
 
-        for i in range(k,n):
-            arr[i-k]=arr[i]
+            nums[len(nums)-k:]=temp
+        return nums
 
-            arr[n-k:]=temp
-        return arr
-
-arr = [1,2,3,4,5]
+nums = [1,2,3,4,5]
 object =Solution()
-print(object.leftRotateArr(arr))    
+print(object.leftRotateArr(nums,3))    
 '''
 Time Complexity:O(n)
 Space Complexity:O(n)
@@ -46,3 +44,4 @@ print(obj.leftRotate(arr, 2))
 Time Complexity:O(n)
 Space Complexity:O(1)
 '''
+
