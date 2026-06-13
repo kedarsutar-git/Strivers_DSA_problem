@@ -27,18 +27,18 @@ class Node:
 class Solution:
     def ReverseLinkedList(self,head):
         stack = []
-        current = head
+        temp = head
 
-        while(current):
-            stack.append(current.val)
+        while(temp is not None):
+            stack.append(temp.val)
 
-            current = current.next
+            temp = temp.next
 
-        current = head
-        while(current):
-            current.val = stack.pop()
+        temp = head
+        while(temp is not None):
+            temp.val = stack.pop()
 
-            current = current.next
+            temp = temp.next
 
         return head
         

@@ -1,19 +1,39 @@
 '''
-Ex no:1
+Example 1:
 
-Input: 1→2→3→4→5→6→Null
-Output: 2→4→6→1→3→5→Null
-
-Explanation :
-Odd Nodes in LinkedList are 1,3,5 and Even Nodes in LinkedList are 2,4,6
-In Modified LinkedList all even Nodes comes before all Odd Nodes. So Modified 
-LinkedList looks like 2→4→6→1→3→5→Null. Order of even and odd Nodes is 
-maintained in modified LinkedList.
+Input: head = [1,2,3,4,5]
+Output: [1,3,5,2,4]
 
 
-Ex no:2
-Input: 1→3→5→Null
-Output: 1→3→5→Null
-Explanation: As there are no Even Nodes in LinkedList, The Modified LinkedList 
-is same as Original LinkedList.
+Example 2:
+
+Input: head = [2,1,3,5,6,4,7]
+Output: [2,3,6,7,1,5,4]
 '''
+
+
+class Node:
+     def __init__(self, val=0, next=None):
+         self.val = val
+         self.next = next
+class Solution:
+    def oddEvenList(self, head):
+
+        if(head is not None or head.next is not None):
+            return head
+
+        odd = head
+        even = head.next
+        evenHead = even
+
+        while even and even.next:
+            odd.next = even.next
+            odd = odd.next
+
+            even.next = odd.next
+            even = even.next
+
+        odd.next = evenHead
+
+        return head     
+        
