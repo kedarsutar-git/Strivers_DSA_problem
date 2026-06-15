@@ -1,18 +1,17 @@
 import math
 class Solution:
-    def Smallest_Div(self,nums:list[int],thr:int) -> int:
-        for div in range(1,max(nums)):
+    def smallestDivisor(self, nums:list[int], limit:int) ->int:
+        for dev in range(min(nums),max(nums)+1):
             sum = 0
-            for i in range(len(nums)):
-                sum += math.ceil(nums[i]/div)
+            for num in nums:
+                sum +=math.ceil(num/dev)
+            if(sum<=limit):
+                return dev
 
-            if(sum<=thr):
-                return div
-
-        return -1
-    
-nums = [1,2,5,9]
-object = Solution()
+        return -1        
+nums =  [1,2,5,9] 
+object =Solution()
+print(object.smallestDivisor(nums,6))      
 print(object.Smallest_Div(nums,6))    
 '''
 Time Complixity:O(max*n)
@@ -51,6 +50,8 @@ Time Complixity:O(log(max)*n)
 space Complixity:O(1)
 '''
 
+
+         
 
        
 

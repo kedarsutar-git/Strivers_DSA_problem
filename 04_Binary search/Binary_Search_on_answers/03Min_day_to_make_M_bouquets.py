@@ -89,3 +89,69 @@ Time Complixty:O(nlogn)
 Sapce Complixity:O(1)
 
 '''
+
+# Brute force method 
+import math
+class Solution:
+    def roseGarden(self,nums, k, m):
+        if(m*k>len(nums)):
+            return -1
+        
+        for Day in range(min(nums),max(nums)+1):
+            count = 0
+            m1 = 0
+            for num in nums:
+                if(num<=Day):
+                    count +=1
+                    if(count==k):
+                        m1 +=1
+                        count = 0
+
+                else:
+                    count = 0
+
+            if(m1==m):
+                return Day
+                                             
+nums =  [7, 7, 7, 7, 13, 11, 12, 7]
+object =Solution()
+print(object.roseGarden(nums,2,3))
+
+
+
+# Optimal Method 
+class Solution(object):
+    def minDays(self, bloomDay:list[int], m:int, k:int) -> int:
+        if m * k > len(bloomDay):
+            return -1
+        
+        
+        start ,end = min(bloomDay),max(bloomDay)
+
+        while(start<=end):
+            day = start+(end-start)//2
+            count,m1 =0,0
+
+            for num in bloomDay:
+                if(num<=day):
+                    count +=1
+
+                    if(count==k):
+                        m1+=1
+                        count = 0
+
+                else:
+                    count = 0
+
+            if(m1>=m):
+                end = day-1 
+
+            else:
+                start = day+1
+
+        return start
+    
+bloomDay =  [7, 7, 7, 7, 13, 11, 12, 7]
+object = Solution()
+print(object.minDays(bloomDay,3,2))   
+

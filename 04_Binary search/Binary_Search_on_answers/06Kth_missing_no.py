@@ -1,19 +1,20 @@
 # Brute Force Approach
 class Solution:
-    def Kth_missing(self,nums:list[int],k:int) ->int:
-        temp1 = []
-        temp2 = []
-        for i in range(1,max(nums)):
-            temp1.append(i)
+    def KthmissingNo(self,nums:list[int],k:int) ->int:
+        l1 = []
+        l2 = []
+        for i in range(1,max(nums)+k+1):    # We add k because the kth missing number may be greater than max(nums).
+            l1.append(i)
+        for num in l1:
+            if(num not in nums):
+                l2.append(num)
 
-        for i in temp1:
-            if i not in nums:
-                temp2.append(i) 
-        return temp2[k-1] 
+        return l2[k-1]
 
-nums = [2,3,4,7,11]
 object =Solution()
-print(object.Kth_missing(nums,5))
+nums =[2,3,4,7,11]
+print(object.KthmissingNo(nums,5))
+
 '''
 Time Complixity:O(n**2)
 Space Complixity:O(n)
@@ -59,4 +60,11 @@ print(object.kth_miss(nums,5))
 Time Complixity::O(logn)
 space Complixity:O(1)
 
-'''    
+''' 
+
+
+
+
+
+
+

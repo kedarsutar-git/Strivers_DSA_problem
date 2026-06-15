@@ -3,39 +3,65 @@ Koko has piles of bananas and h hours to eat them all. She eats at a fixed speed
 The goal is to find the minimum speed k so she finishes within h hours.
 
 '''
+
+# Brute force method 
+import math
+class Solution:
+    def minimumRateToEatBananas(self, nums, h):
+        
+        for k in range(1,max(nums)+1):
+            totalH = 0
+            for bananas in nums:
+                totalH +=math.ceil(bananas/k)
+
+            if(totalH<=h):
+                return k
+                
+    
+
+nums = [3, 6, 7, 11]
+object = Solution()
+print(object.minimumRateToEatBananas(nums,8))     
+
+'''
+Time Complexity:O(n**2)
+Space Complexity:O(1)
+
+'''
+
+
+# Optimal method 
+
 import math
 
 class Solution:
-    def calculateTotalHours(self, piles, speed):
-        totalH = 0
-        for bananas in piles:
-            totalH += math.ceil(bananas / speed)
-        return totalH
+    def minEatingSpeed(self, nums:list[int],k:int):
+        start,end = 1,max(nums)
 
-    def minEatingSpeed(self, piles, h):
-        # Find maximum element
-        maxPile = max(piles)
+        while(start<=end):
+            k = start +(end-start)//2
 
-        low, high = 1, maxPile
-        ans = maxPile
+            totalH = 0
+            for bananas in nums:
+                totalH +=math.ceil(bananas/k)
 
-        while low <= high:
-            mid = (low + high) // 2
-            totalH = self.calculateTotalHours(piles, mid)
+            if(totalH<=h):
+                end= k-1
 
-            if totalH <= h:
-                ans = mid
-                high = mid - 1
             else:
-                low = mid + 1
+                start = k+1
 
-        return ans
-
-piles = [3, 6, 7, 11]
+        return start            
+    
+nums = [3, 6, 7, 11]
 h = 8
 obj = Solution()
-print(obj.minEatingSpeed(piles, h))
+print(obj.minEatingSpeed(nums, h))
 
 '''
 Time Complixity:O(n)XO(log(max(pil)))
+Space Complexity:O(1)
+
 '''
+                
+
