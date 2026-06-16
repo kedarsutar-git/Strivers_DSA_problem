@@ -1,23 +1,24 @@
 # brute force method 
 class Solution:
-    def shipWithinDays(self, nums, days):
-       for capacity in range(max(nums),sum(nums)+1):
-        Sum,day = 0,1
-        for num in nums:
-           
-            if(Sum+num<=capacity):
-                Sum+=num
+    def shipWithinDays(self, weights, days):
+       for capacity in range(max(weights),sum(weights)+1):
+        load  = 0
+        day   = 1
+        for weight in weights:
+            if(load+weight>capacity):
+                day += 1
+                load = weight
+
 
             else:
-                day+=1
-                Sum = num    
+                load+=weight
 
         if(day<=days):
-            return capacity
+            return capacity   
         
-nums =   [3, 2, 2, 4, 1, 4]
+weights =   [3, 2, 2, 4, 1, 4]
 object =Solution()
-print(object.shipWithinDays(nums,3))       
+print(object.shipWithinDays(weights,3))       
         
 '''
 | Method        | Time Complexity                   | Space Complexity |
@@ -34,17 +35,18 @@ class Solution:
     def Least_capacity(self,nums:list[int],days:int) -> int:
         start = max(nums)
         end = sum(nums)
-        while start <= end:
-            mid = (start + end) // 2
+        while(start <= end):
+            mid = start +(end-start)//2
+
             days_needed = 1
             current_load = 0
             for weight in nums:
-                if current_load + weight > mid:
+                if(current_load + weight > mid):
                     days_needed += 1
                     current_load = weight
                 else:
                     current_load += weight
-            if days_needed <= days:
+            if(days_needed <= days):
                 end = mid - 1
             else:
                 start = mid + 1
@@ -61,3 +63,5 @@ print(object.Least_capacity(nums,5))
 | Binary Search | (O(n\log(S-M+1))) or (O(n\log S)) | (O(1))           |
 
 '''
+
+
