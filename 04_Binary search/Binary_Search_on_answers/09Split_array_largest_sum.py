@@ -1,32 +1,57 @@
-class SubarrayPartitioner:
-    # Counts how many partitions are needed for a given max_sum
-    def count_partitions(self, a, max_sum):
-        partitions = 1  # at least one partition
-        subarray_sum = 0  # current subarray sum
 
-        for num in a:
-            if subarray_sum + num <= max_sum:
-                subarray_sum += num
+
+'''
+Example 1:
+
+Input: nums = [7,2,5,10,8], k = 2
+Output: 18
+Explanation: There are four ways to split nums into two subarrays.
+The best way is to split it into [7,2,5] and [10,8], where the largest sum
+among the two subarrays is only 18.
+
+
+
+Example 2:
+
+Input: nums = [1,2,3,4,5], k = 2
+Output: 9
+Explanation: There are four ways to split nums into two subarrays.
+The best way is to split it into [1,2,3] and [4,5], where the largest 
+sum among the two subarrays is only 9.
+'''
+
+class Solution:
+    def splitArray(self, nums: list[int], k: int) -> int:
+        if(k>len(nums)):
+            return -1
+
+        start = max(nums)
+        end = sum(nums)
+
+        while(start<=end):
+            mid = start +(end-start)//2
+            Sum = 0
+            split = 1
+            for num in nums:
+                if(Sum+num<=mid):
+                    Sum +=num
+                else:
+                    split +=1
+                    Sum = num
+                    
+            if(split>k):
+                start = mid+1
+
             else:
-                partitions += 1
-                subarray_sum = num
-        return partitions
+                end = mid-1
 
-    # Finds the minimum largest subarray sum possible for at most k partitions
-    def largest_subarray_sum_minimized(self, a, k):
-        low = max(a)  # largest element
-        high = sum(a)  # sum of all elements
+        return start                            
+        
+nums =  [10, 20, 30, 40]
+object = Solution()
+print(object.splitArray(nums, 2)) 
+'''
+Time Complexity:O(nlogn)
+Space Complexity:O(1)
 
-        # Binary search
-        while low <= high:
-            mid = (low + high) // 2
-            partitions = self.count_partitions(a, mid)
-
-            if partitions > k:
-                low = mid + 1  # too many partitions
-            else:
-                high = mid - 1  # try smaller max_sum
-        return low
-a =  [10, 20, 30, 40]
-object = SubarrayPartitioner()
-print(object.largest_subarray_sum_minimized(a, 2)) 
+'''
