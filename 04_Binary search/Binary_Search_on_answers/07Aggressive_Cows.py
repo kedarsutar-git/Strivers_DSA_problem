@@ -1,46 +1,30 @@
-def can_place_cows(stalls, cows, dist):
-    # Place the first cow in the first stall
-    count = 1
-    last_pos = stalls[0]
+class Solution:
+    def aggressiveCows(self, stalls, k):
+        stalls.sort()
 
-    # Try placing the remaining cows
-    for i in range(1, len(stalls)):
-        if stalls[i] - last_pos >= dist:
-            count += 1
-            last_pos = stalls[i]
+        start = 1
+        end = stalls[-1] - stalls[0]
 
-            # All cows have been placed
-            if count == cows:
-                return True
+        while(start <= end):
+            mid = start + (end - start) // 2
 
-    return False
+            # Check if we can place k cows with minimum distance = mid
+            count = 1
+            last_pos = stalls[0]
 
+            for stall in stalls:
+                if stall - last_pos >= mid:
+                    count += 1
+                    last_pos = stall
 
-def aggressive_cows(stalls, cows):
-    # Step 1: Sort the stalls
-    stalls.sort()
+            if count >= k:
+                # Distance is possible, try for a larger one
+                start = mid + 1
+            else:
+                # Distance is not possible
+                end = mid - 1
 
-    # Step 2: Define the search space
-    low = 1
-    high = stalls[-1] - stalls[0]
-
-    # Step 3: Binary Search on answer
-    while low <= high:
-        mid = low + (high - low) // 2
-
-        if can_place_cows(stalls, cows, mid):
-            # Distance is possible, try for a larger one
-            low = mid + 1
-        else:
-            # Distance is not possible, reduce it
-            high = mid - 1
-
-    # 'high' stores the largest valid distance
-    return high
-
-
-# Example usage
-stalls = [1, 2, 4, 8, 9]
-cows = 3
-
-print(aggressive_cows(stalls, cows))  # Output: 3
+        return end
+stalls = [0, 3, 4, 7, 10, 9]
+object =Solution()
+print(object.aggressiveCows(stalls,3))
