@@ -47,3 +47,7 @@ class Solution:
 nums = [3,5,3,4]
 object = Solution()
 print(object.SavePeople(nums,5))
+
+
+  
+
