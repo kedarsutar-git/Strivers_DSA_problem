@@ -1,7 +1,13 @@
-def Fibonacci(n):
-    if(n==1 or n==2):
-        return 1
-    else:
-        return Fibonacci(n-1)+Fibonacci(n-2)
+class Solution:
+    def Fibonacci(self,num:int):
+        if(num==0 or num==1):
+            return num
+        else:
+            return self.Fibonacci(num-1)+self.Fibonacci(num-2)
+        
+num = 4
+object = Solution()
+print(object.Fibonacci(num))
 
-print(Fibonacci(6))     
+
+    
