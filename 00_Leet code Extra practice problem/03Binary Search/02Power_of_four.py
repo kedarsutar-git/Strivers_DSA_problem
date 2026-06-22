@@ -44,6 +44,6 @@ object = Solution()
 print(object.powerofFour(5))            
 
 '''
-Time Complexity:O(logn)
+Time Complexity:O(1/2logn)
 Sapce Complexity:O(1)
 '''
