@@ -49,4 +49,10 @@ class Solution:
 
 nums =  [2,3,4]
 object =Solution()
-print(object.TwoSum(nums,6))             
+print(object.TwoSum(nums,6))   
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+'''
+
