@@ -1,10 +1,11 @@
 class Solution:
-    def printNumber(self,n:int) ->None:
+    def printNum(self,n:int):
         if(n==0):
-            return 
-        
+            return
+        self.printNum(n-1)
         print(n)
-        self.printNumber(n-1)
+
+        
 
 object =Solution()
-print(object.printNumber(10))
+print(object.printNum(5))

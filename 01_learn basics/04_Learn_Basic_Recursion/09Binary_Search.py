@@ -17,3 +17,17 @@ class Solution:
 nums = [1,2,3,4,5,6,7]
 object =Solution()
 print(object.Bs(nums,0,len(nums)-1,7))    
+
+    
+class Solution:
+    def printNum(self,n:int):
+        if(n==0):
+            return
+        self.printNum(n-1)
+        print(n)
+
+        
+
+object =Solution()
+print(object.printNum(5))
+
