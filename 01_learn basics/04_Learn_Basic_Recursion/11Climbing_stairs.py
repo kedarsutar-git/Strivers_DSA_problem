@@ -47,3 +47,13 @@ Time Complexity:O(2**n)
 Space Compliexity:O(n)
 '''
 
+class Solution:
+    def PrintNumber(self,n:int):
+        if(n==0):
+            return 
+        
+        self.PrintNumber(n-1)
+        print(n)
+
+object = Solution()
+print(object.PrintNumber(100))

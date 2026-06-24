@@ -1,9 +1,9 @@
 class Solution:
     def printNum(self,n:int):
-        if(n==0):
+        if(n==0):     # base case
             return
-        self.printNum(n-1)
-        print(n)
+        self.printNum(n-1)   # function call
+        print(n)      # work
 
         
 

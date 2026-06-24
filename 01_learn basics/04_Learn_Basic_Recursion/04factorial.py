@@ -1,9 +1,9 @@
 class solution:
     def Factorial(self,num:int) ->int:
-        if(num==0 or num==1):
+        if(num==0 or num==1):    # base Case
             return 1
         else:
-            return num*self.Factorial(num-1)
+            return num*self.Factorial(num-1)  # work and function call
         
 num = 5
 object = solution()

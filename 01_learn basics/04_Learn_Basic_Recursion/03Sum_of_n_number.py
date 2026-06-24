@@ -1,9 +1,9 @@
 class Solution:
     def sum(self,num:int) ->int:
-        if(num==1):
+        if(num==1):   # base Case
             return 1
         else:
-            return num + self.sum(num-1)
+            return num + self.sum(num-1)   # wrok and function call
         
 num = 123
 object = Solution()
