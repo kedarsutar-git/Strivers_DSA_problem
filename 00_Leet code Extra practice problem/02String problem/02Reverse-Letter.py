@@ -56,3 +56,30 @@ Time Complexity:O(n)
 Space Complexity:O(1)
 
 '''
+
+class Solution:
+    def ReverseLetters(self,s:str) ->str:
+        char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        s = list(s)
+        start = 0
+        end = len(s)-1
+
+        while(start<=end):
+            if(s[start] in char and s[end] in char):
+                s[start],s[end] = s[end],s[start]
+
+                start +=1
+                end -=1
+
+            elif(s[start] not in char):
+                start +=1
+
+            else:
+                end-=1
+
+        return "".join(s)
+s = "a-bC-dEf-ghIj"
+object = Solution()
+print(object.ReverseLetters(s))             
+
+
