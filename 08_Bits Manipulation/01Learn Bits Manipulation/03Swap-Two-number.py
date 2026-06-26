@@ -9,3 +9,7 @@ class Solution:
 object = Solution()
 print(object.Swapnumber(2,3))
 
+'''
+Time Complexity:O(1)
+Space Complexity:O(1)
+'''

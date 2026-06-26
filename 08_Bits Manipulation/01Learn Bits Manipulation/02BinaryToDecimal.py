@@ -12,3 +12,8 @@ n = "111010111"
 object = Solution()
 print(object.BinaryToDecimal(n))
 
+'''
+Time Complexity:O(n)
+Space Comlexity:O(1)
+'''
+

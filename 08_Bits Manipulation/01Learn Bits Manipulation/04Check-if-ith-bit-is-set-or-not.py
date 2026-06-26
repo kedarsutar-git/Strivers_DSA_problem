@@ -34,3 +34,8 @@ class Solution:
 
 obj = Solution()
 print(obj.Check_ith_bit(234, 1))  # True
+
+'''
+Time Complexity:O(1)
+Space Complexity:O(1)
+'''
