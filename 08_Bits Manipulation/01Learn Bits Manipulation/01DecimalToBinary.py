@@ -13,10 +13,10 @@ class Solution:
             
         return res[::-1]
 
-n = 471
+n = 234
 object =Solution()
 print(object.DecimalToBinary(n))      
-         
+
 '''
 Time Complexity:O(logn)
 Space Compexity:O(logn)
