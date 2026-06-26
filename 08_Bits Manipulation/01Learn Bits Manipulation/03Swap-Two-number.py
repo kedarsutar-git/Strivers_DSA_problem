@@ -1,3 +1,22 @@
+# using temp variable 
+
+class Solution:
+    def swapnumber(self,a:int,b:int):
+        temp = a
+        a = b
+        b = temp
+
+        return a,b
+    
+object = Solution()
+print(object.swapnumber(12,23)) 
+'''
+Time Complexity:O(1)
+Space Comepexity:O(1)
+
+'''   
+
+# optimal (using XOR operator)
 class Solution:
     def Swapnumber(self,a:int,b:int):
         a = a^b
