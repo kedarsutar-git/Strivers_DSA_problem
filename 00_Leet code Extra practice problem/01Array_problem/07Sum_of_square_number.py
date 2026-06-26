@@ -1,5 +1,5 @@
 '''
-Given a non-negative integer c, decide whether there're two integers a and b such that a2 + b2 = c.
+Given a non-negative integer c, decide whether there're two integers a and b such that a*a + b*b = c.
 
  
 
@@ -40,3 +40,4 @@ Time Complexity:O(n)
 Space Complexity:O(1)
 
 '''          
+

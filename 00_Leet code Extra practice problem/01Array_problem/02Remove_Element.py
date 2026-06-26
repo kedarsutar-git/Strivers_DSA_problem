@@ -43,3 +43,17 @@ nums =  [0,1,2,2,3,0,4,2]
 object =Solution()
 print(object.RemoveElement(nums,2)) 
 
+
+
+
+class Solution:
+    def RemoveElement(self,nums:list[int],Val:int) ->int:
+        count = 0
+        for num in nums:
+            if(num==Val):
+                count +=1
+
+        return len(nums)-count
+nums =  [3,2,2,3]   
+object= Solution()
+print(object.RemoveElement(nums,3))

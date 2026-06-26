@@ -44,3 +44,14 @@ class Solution:
 
 object  = Solution()
 print(object.validSquare(16))                
+
+'''
+Time Compelexity:O(1/2log(n))
+Space Complexity:O(1)
+'''
+
+
+
+
+
+        

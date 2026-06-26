@@ -50,5 +50,11 @@ s = "IceCreAm"
 object = Solution()
 print(object.ReverseVowels(s))
 
-                
+'''
+Time Complexity:O(n)
+Space Compexilty:O(1)
+
+'''
+
+
 

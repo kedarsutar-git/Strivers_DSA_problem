@@ -49,5 +49,7 @@ Space Complexity:O(n)
 '''
 
 
-words = ["bella","label","roller"]
-print(words[0])
+
+
+
+         
