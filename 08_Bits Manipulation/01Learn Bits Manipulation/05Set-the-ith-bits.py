@@ -3,9 +3,10 @@ class Solution:
         return (n|(1<<i))
     
 object = Solution()
-print(object.Set_ith_bits(9,2))
+print(object.Set_ith_bits(13,2))
 '''
 Time Complexity:O(1)
 Space Complexity:O(1)
 
 '''
+
