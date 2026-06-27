@@ -25,7 +25,10 @@ class Solution:
 obj = Solution()
 print(obj.Check_ith_bit(234,1))    
 
+'''
+Time Complexity:O(logn**2)
 
+'''
 # Optimal method
 class Solution:
     def Check_ith_bit(self, n: int, i: int) -> bool:
