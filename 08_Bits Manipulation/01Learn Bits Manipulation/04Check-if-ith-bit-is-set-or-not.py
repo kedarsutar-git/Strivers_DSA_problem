@@ -27,6 +27,7 @@ print(obj.Check_ith_bit(234,1))
 
 '''
 Time Complexity:O(logn**2)
+Space Comlexity:O(logn)
 
 '''
 # Optimal method
