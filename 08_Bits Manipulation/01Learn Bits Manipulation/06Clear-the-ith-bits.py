@@ -4,3 +4,9 @@ class Solution:
     
 object = Solution()
 print(object.ClearithBits(13,2))    
+
+'''
+Time Complexity:O(1)
+Space Complexity:O(1)
+
+'''
