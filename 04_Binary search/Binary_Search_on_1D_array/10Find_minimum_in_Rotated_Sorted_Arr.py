@@ -22,7 +22,7 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 class Solution:
     def find_min(self,nums:list[int]) ->int:
         MIN = nums[0]
-        for i in range(len(nums)):
+        for i in range(1,len(nums)):
            
             if(nums[i]<MIN):
                 MIN = min(MIN,nums[i])
@@ -55,7 +55,7 @@ class Solution:
  
         return nums[start]
 
-nums = [4, 5, 6, 7, 1, 2]
+nums = [4, 5, 6, 7,2]
 obj = Solution()
 print(obj.find_min(nums))  # Output: 1
 
@@ -63,27 +63,38 @@ print(obj.find_min(nums))  # Output: 1
 Time Complixity:O(logn)
 Space Complixity:O(1)
 '''
-
 class Solution:
-    def Find(self,nums:list[int]) ->int:
+    def FindMin(self,nums:list[int]) ->int:
+        nums = set(nums)
+        nums = list(set(nums))
         start = 0
         end = len(nums)-1
-        ans = 0
-        while(start<end):
+        ans = float("inf")
+        while(start<=end):
             mid = start+(end-start)//2
 
-            if(nums[start]<nums[mid] or nums[mid]<nums[end]):
-                ans = nums[start]
+            if(nums[start]<=nums[mid]):
+                ans = min(ans,nums[start])
+
                 start = mid+1
 
-            elif(nums[mid]<nums[end]):
-                ans =  nums[mid]
+            else:
+                ans = min(ans,nums[mid])
+
                 end = mid-1
 
-        return ans     
-nums = [4, 5, 6, 7, 1, 2]
+        return ans 
+
+nums = [10,1,10,10,10,10]
 obj = Solution()
-print(obj.Find(nums))
+print(obj.FindMin(nums))      
+
+            
+
+
+
+
+
 
 
 
