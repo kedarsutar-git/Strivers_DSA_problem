@@ -33,7 +33,7 @@ class Solution:
         return count        
 
 object = Solution()
-print(object.MinFlipped(10,7))            
+print(object.MinFlipped(10, 7))            
 
 
 '''
