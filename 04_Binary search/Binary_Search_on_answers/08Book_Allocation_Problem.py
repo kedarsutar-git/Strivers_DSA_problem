@@ -58,3 +58,21 @@ class Solution:
 arr = [12, 34, 67, 90]    
 object =Solution()
 print(object.findPages(arr,2))
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+  

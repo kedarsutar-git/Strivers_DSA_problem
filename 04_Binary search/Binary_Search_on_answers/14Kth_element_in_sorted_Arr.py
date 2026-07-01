@@ -17,7 +17,7 @@ Output: 256
 Explanation: Final sorted array is - [72, 86, 100, 112, 113, 119, 256, 265, 349, 445, 770, 892], 
 7th element of this array is 256.
 '''
-
+# Better method 
 class Solution:
     def kthElement(self, a:list[int], b:list[int], k:int) ->int:
         i,j,temp = 0,0,[]
@@ -48,6 +48,6 @@ print(object.kthElement(a,b,7))
 
 '''
 Time Complexity:O(n+m)
-Space Complexity:O(1)
+Space Complexity:O(n)
 
 '''

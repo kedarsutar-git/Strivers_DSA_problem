@@ -31,6 +31,12 @@ nums1  = [2, 4, 6]
 nums2 = [1, 3,5]
 
 object =Solution()
-print(object.median(nums1,nums2))                
+print(object.median(nums1,nums2))    
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+
+'''
 
 

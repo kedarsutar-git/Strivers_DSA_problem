@@ -20,28 +20,31 @@ Space ComplexityLO(1)
 
 # Use Binary Search
 class Solution:
-    def sqr_root(self, num:int) -> int:
-       
-        if num < 2:
-            return num
-
-        left, right, ans = 1, num // 2, 0
-
-        while left <= right:
-            mid = (left + right) // 2
-
-            if mid * mid <= num:
-                ans = mid
-                left = mid + 1
-            else:
-                right = mid - 1
-
+    def Sqr_root(self,num:int) ->int:
         
-        return ans       
-object =Solution()
-print(object.sqr_root(25))
+        start = 1
+        end = int(num**0.5)
+        ans = 1
+        while(start<=end):
+            mid = start + (end - start)//2
+
+            if(mid*mid<=num):
+                ans = mid
+
+                start = mid + 1
+
+            else:
+                end = mid - 1
+
+        return ans 
+
+object = Solution()
+print(object.Sqr_root(56))    
 '''
 Time Complexity:O(logn)
 Space Complexity:O(1)
 '''
             
+
+
+                    
