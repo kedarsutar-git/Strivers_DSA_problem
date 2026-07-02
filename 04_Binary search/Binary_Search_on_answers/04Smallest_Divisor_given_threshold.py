@@ -12,7 +12,7 @@ class Solution:
 nums =  [1,2,5,9] 
 object =Solution()
 print(object.smallestDivisor(nums,6))      
-print(object.Smallest_Div(nums,6))    
+ 
 '''
 Time Complixity:O(max*n)
 Space Complixity:O(1)
@@ -24,13 +24,13 @@ class Solution:
     def Find_min_Div(self,nums:list[int],thr:int) ->int:
         start = 1
         end = max(nums)
-        ans = 0
+        ans = -1
        
         while(start<=end):
             mid = start+(end-start)//2
             sum = 0 
-            for i in range(len(nums)):
-                sum += math.ceil(nums[i]/mid)
+            for num in nums:
+                sum += math.ceil(num/mid)
             if(sum<=thr):
                 ans = mid
                 end = mid-1

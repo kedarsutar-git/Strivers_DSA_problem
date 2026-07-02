@@ -32,36 +32,45 @@ print(object.shipWithinDays(weights,3))
 # Optimal Mehtod
 
 class Solution:
-    def Least_capacity(self,nums:list[int],days:int) -> int:
+    def CapacityOfShip(self, nums: list[int], days: int) -> int:
         start = max(nums)
         end = sum(nums)
-        while(start <= end):
-            mid = start +(end-start)//2
+        ans = -1
 
-            days_needed = 1
-            current_load = 0
-            for weight in nums:
-                if(current_load + weight > mid):
-                    days_needed += 1
-                    current_load = weight
-                else:
-                    current_load += weight
-            if(days_needed <= days):
+        while start <= end:
+            mid = start + (end - start) // 2
+
+            if self.isValid(nums, days, mid):
+                ans = mid
                 end = mid - 1
             else:
                 start = mid + 1
-        return start    
+
+        return ans
+
+    def isValid(self, nums, days, mid):
+        days_needed = 1
+        current_load = 0
+
+        for weight in nums:
+            if current_load + weight > mid:
+                days_needed += 1
+                current_load = weight
+            else:
+                current_load += weight
+
+        return days_needed <= days
+
+
 nums = [1,2,3,4,5,6,7,8,9,10]
-  
-object = Solution()
-
-print(object.Least_capacity(nums,5))
-
+obj = Solution()
+print(obj.CapacityOfShip(nums, 5))
 '''
 | Method        | Time Complexity                   | Space Complexity |
 | ------------- | --------------------------------- | ---------------- |
 | Binary Search | (O(n\log(S-M+1))) or (O(n\log S)) | (O(1))           |
 
 '''
+
 
 

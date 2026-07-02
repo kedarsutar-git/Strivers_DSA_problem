@@ -26,38 +26,50 @@ Output: 71
 
 Explanation: The allocation of books will be 25, 46 | 28 | 49 | 24.
 '''
+
+
 class Solution:
-    def findPages(self, arr, m):
-        # Allocation impossible
-        if m > len(arr):
-            return -1
+    def FindPage(self,nums:list[int],m) ->int:
+        if(m>len(nums)):
+            return -1 
+        
+        start = max(nums)
+        end = sum(nums)
+        ans = -1
 
-        start = max(arr)
-        end = sum(arr)
+        while(start<=end):
+            mid = start + (end - start)//2
 
-        while start <= end:
-            mid = (start + end) // 2
-
-            students = 1
-            pagesStudent = 0
-
-            for pages in arr:
-                if pagesStudent + pages <= mid:
-                    pagesStudent += pages
-                else:
-                    students += 1
-                    pagesStudent = pages
-
-            if students > m:
-                start = mid + 1
-            else:
+            if self.isValid(nums,mid,m):
+                ans = mid
+                
                 end = mid - 1
 
-        return start
+            else:
+                start = mid + 1
 
-arr = [12, 34, 67, 90]    
+        return  ans 
+
+    def isValid(self,nums,mid,m):
+        student = 1
+        totalPages = 0
+
+        for pages in nums:
+            if(totalPages+pages<=mid):
+                totalPages +=pages
+
+            else:
+                student +=1
+                totalPages = pages
+
+        if(student>m):
+            return False
+        return True       
+
+nums = [12, 34, 67, 90]    
 object =Solution()
-print(object.findPages(arr,2))
+print(object.FindPage(nums,2))
+
 
 
 
