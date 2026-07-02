@@ -93,7 +93,7 @@ class Solution:
 
         return (Last-First)+1
 
-nums = [2, 2 , 3 , 3 , 3 , 3 , 3 , 4] 
+nums = [2, 2 , 3 , 3 , 3 , 4] 
 object = Solution()
 print(object.Count_First_last_occ(nums,3))               
 '''
