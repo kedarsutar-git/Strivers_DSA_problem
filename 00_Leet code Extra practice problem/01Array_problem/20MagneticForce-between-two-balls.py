@@ -56,7 +56,6 @@ class Solution:
 
         return ans 
 
-
     def isValid(self,mid,m,position):
         pos = 0
         count = 1
