@@ -81,3 +81,7 @@ obj = Solution()
 print(obj.RotiPrata(10, 4, [1, 2, 3, 4]))
 
 
+'''
+Time Complexity:O(nlogn)+O(nlogD)
+Space Complexity:O(1)
+'''
