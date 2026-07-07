@@ -16,3 +16,8 @@ class Solution:
 object = Solution()
 print(object.FindXOR(4)) 
 
+'''
+Time Complexity :O(1)
+Space Complexity:O(1)
+
+'''
