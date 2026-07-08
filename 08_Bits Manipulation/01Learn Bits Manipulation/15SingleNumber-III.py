@@ -17,6 +17,7 @@ Explanation:
 
 The integers -1 and 0 have appeared only once.
 '''
+# Brute force method 
 class Solution:
     def SingleNumber(self,nums:list[int]) ->list[int]:
         Map = {}
@@ -44,3 +45,5 @@ Time Complexity:O(n)
 Space Complexity:O(n)
 
 '''
+
+
