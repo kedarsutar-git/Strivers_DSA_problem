@@ -74,6 +74,7 @@ object = Solution()
 nums =  [5,4,3,2,1,1000000000]
 print(object.maxDistance(nums,2))         
 
+
 '''
 Time Complexity:O(nlogn)+O(nlonD)
 space Complexity:O(1)
