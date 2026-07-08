@@ -46,4 +46,35 @@ Space Complexity:O(n)
 
 '''
 
+# Optimal method 
 
+from typing import List
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> List[int]:
+
+        xor_all = 0
+
+        # XOR of all elements
+        for num in nums:
+            xor_all ^= num
+
+        # Rightmost set bit
+        rightmost_set_bit = xor_all & (-xor_all)
+
+        first = 0
+        second = 0
+
+        # Divide into two groups
+        for num in nums:
+            if num & rightmost_set_bit:
+                first ^= num
+            else:
+                second ^= num
+
+        return [first, second]
+
+
+object = Solution()
+nums = [1, 2, 1, 3, 5, 2]
+print(object.singleNumber(nums)) 
