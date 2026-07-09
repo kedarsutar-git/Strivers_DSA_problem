@@ -48,8 +48,12 @@ nums = [3,5,3,4]
 object = Solution()
 print(object.SavePeople(nums,5))
 
+'''
+Time Complexity:O(nlogN)
+Space Complexity:O(1)
 
-  
+'''  
+
 
 
 
