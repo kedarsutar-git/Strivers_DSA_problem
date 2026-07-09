@@ -30,8 +30,18 @@ head = obj.InsertionAtEnd(head, 50)
 # Print linked list
 temp = head
 
-while temp:
+while(temp is not None):
     print(temp.data, end=" -> ")
     temp = temp.next
 
 print("None")
+
+
+
+
+
+        
+
+
+
+        
