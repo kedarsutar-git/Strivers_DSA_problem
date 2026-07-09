@@ -57,3 +57,8 @@ class Solution:
 arr = [1,2,2,1,1,3]
 object = Solution()
 print(object.UniqueNumber(arr))
+
+'''
+Time Complexity:O(nLogN)
+Space Complexity:O(n)
+'''
