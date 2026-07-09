@@ -42,6 +42,10 @@ class Solution:
 nums =  [0,1,2,2,3,0,4,2]
 object =Solution()
 print(object.RemoveElement(nums,2)) 
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+'''
 
 
 
@@ -57,3 +61,8 @@ class Solution:
 nums =  [3,2,2,3]   
 object= Solution()
 print(object.RemoveElement(nums,3))
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+'''
