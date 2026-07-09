@@ -42,3 +42,9 @@ nums =  [4,2,0,3,2,5]
 object = Solution()
 print(object.TrapWater(nums))
 
+'''
+=
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
