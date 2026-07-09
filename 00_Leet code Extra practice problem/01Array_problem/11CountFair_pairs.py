@@ -76,3 +76,8 @@ class Solution:
 nums = [0,1,7,4,4,5]
 object =Solution()
 print(object.countFairPairs(nums,3,6))      
+
+'''
+Time Complexity:O(nlogN)
+Space Complexity:O(1)
+'''
