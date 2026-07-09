@@ -22,6 +22,7 @@ head.next.next = Node(30)
 
 object =Solution()
 head = object.insertionAtHead(head,50)
+
 # printing the linked list
 current= head
 while current is not None:
@@ -29,3 +30,10 @@ while current is not None:
     current = current.next
 
 print("None")
+
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
