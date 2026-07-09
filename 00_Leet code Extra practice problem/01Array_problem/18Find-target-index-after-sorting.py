@@ -93,3 +93,9 @@ class Solution:
 nums = [1,2,5,2,3]
 object = Solution()
 print(object.FindTargetindex(nums,2))                          
+
+'''
+Time Complexity:O(nlogN)
+Space Complexity:O(n)
+
+'''
