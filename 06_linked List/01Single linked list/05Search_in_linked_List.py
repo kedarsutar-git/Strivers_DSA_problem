@@ -22,6 +22,20 @@ class Solution:
                 return True
             current = current.next  # Move in the next node 
         return False
+    
+head = Node(10)
+head.next = Node(20)
+head.next.next = Node(30)
+
+object = Solution()
+print(object.SearchInLL(head,30))
+    
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
+
          
         
 
