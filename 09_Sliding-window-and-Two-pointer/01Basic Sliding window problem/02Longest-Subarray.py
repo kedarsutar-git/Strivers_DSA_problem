@@ -18,6 +18,7 @@ Constraints:
 0 <= k <= 10^9
 '''
 
+# better method 
 class Solution:
     def longestSubarray(self,nums:list[int],k:int) ->int:
         left ,right = 0,0
@@ -27,13 +28,13 @@ class Solution:
         while(right<len(nums)):
             Sum = Sum + nums[right]
 
-            if(Sum<=k):
-                max_len = max(max_len,right-left+1)
-                right +=1
-
-
-            else:
+            while(Sum>k):
+                Sum = Sum - nums[right]
                 left +=1
+
+                if(Sum<=k):
+                    max_len = max(max_len,right-left+1)
+            right +=1
 
         return max_len
 
@@ -41,3 +42,8 @@ nums = [2, 5, 1, 7, 10]
 object = Solution()
 print(object.longestSubarray(nums,14)) 
 
+'''
+Time complexity:O(n)
+Space complexity:O(1)
+
+'''
