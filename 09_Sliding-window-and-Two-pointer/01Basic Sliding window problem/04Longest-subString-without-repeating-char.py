@@ -41,3 +41,9 @@ class Solution:
 object = Solution()
 s = "aaabbbccc"
 print(object.lengthOfLongestSubstring(s))
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+
+'''
