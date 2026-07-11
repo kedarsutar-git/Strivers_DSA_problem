@@ -36,14 +36,17 @@ class Solution:
                     max_len = max(max_len,right-left+1)
             right +=1
 
-        return max_len
+        return max_len 
 
 nums = [2, 5, 1, 7, 10]
 object = Solution()
 print(object.longestSubarray(nums,14)) 
 
 '''
-Time complexity:O(n)
+Time complexity:O(2n)
 Space complexity:O(1)
 
 '''
+
+# optimal method 
+
