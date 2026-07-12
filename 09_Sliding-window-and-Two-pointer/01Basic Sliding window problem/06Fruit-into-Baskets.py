@@ -51,4 +51,50 @@ Space Complexity:O(n)
 
 '''
                                               
+# Optimal method 
 
+
+class Solution:
+    def FruitIntoBaskets(self, nums: list[int]) -> int:
+        left = 0
+        right = 0
+        max_len = 0
+        count_map = {}
+
+        while right < len(nums):
+            # Add current fruit
+            if nums[right] in count_map:
+                count_map[nums[right]] += 1
+
+            else:
+                count_map[nums[right]] = 1
+
+            # Shrink the window if there are more than 2 fruit types
+            while len(count_map) > 2:
+                count_map[nums[left]] -= 1
+
+                if count_map[nums[left]] == 0:
+                    del count_map[nums[left]]
+
+                left += 1
+
+            # Update maximum length
+            max_len = max(max_len, right - left + 1)
+
+            # Expand the window
+            right += 1
+
+        return max_len
+
+
+# Example
+obj = Solution()
+nums = [1,2,1]
+print(obj.FruitIntoBaskets(nums))       
+
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+'''
+                
