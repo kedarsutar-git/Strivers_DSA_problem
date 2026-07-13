@@ -54,6 +54,9 @@ space Complexity:O(1)
 
 '''
 
+ #  OR
+
+
 class Solution:
     def SubArrmaxSum(self,nums:list[int],k:int) ->int:
         right = 0
@@ -68,7 +71,7 @@ class Solution:
 
             elif(right-left+1==k):
                 max_sum = max(max_sum,currentsum)
-                currentsum = currentsum -nums[left]
+                currentsum = currentsum -nums[left]  # remove prev Sum 
 
                 right +=1
                 left +=1
