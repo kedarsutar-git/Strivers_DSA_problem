@@ -67,3 +67,9 @@ obj = Solution()
 
 nums = [1, 0, 0, 1, 1, 0]
 print(obj.BinarySubarrSum(nums, 2))
+
+
+'''
+Time Complexity:O(n)
+space Complexity:O(1)
+'''
