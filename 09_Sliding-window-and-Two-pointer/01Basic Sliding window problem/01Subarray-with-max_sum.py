@@ -53,3 +53,38 @@ space Complexity:O(1)
 | Common Problems  | Maximum sum of size `k`, longest substring, minimum window | Maximum subarray sum               |
 
 '''
+
+class Solution:
+    def SubArrmaxSum(self,nums:list[int],k:int) ->int:
+        right = 0
+        left = 0
+        max_sum = 0
+        currentsum = 0
+        while(right<len(nums)):
+            currentsum = currentsum +nums[right]
+
+            if(right-left+1<k):
+                right +=1
+
+            elif(right-left+1==k):
+                max_sum = max(max_sum,currentsum)
+                currentsum = currentsum -nums[left]
+
+                right +=1
+                left +=1
+
+        return max_sum
+obj = Solution()
+nums = [2, 1, 5, 1, 3, 2]
+print(obj.SubArrmaxSum(nums,3))            
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+'''
+
+
+
+
+            
+
