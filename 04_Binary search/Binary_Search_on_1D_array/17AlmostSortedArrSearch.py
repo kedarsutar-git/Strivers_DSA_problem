@@ -50,4 +50,9 @@ class Solurion:
 
 nums =   [10, 30, 20, 50, 40, 70, 60, 80]
 object = Solurion()
-print(object.SearchAlmostSortarr(nums,30))       
+print(object.SearchAlmostSortarr(nums,30))      
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+'''
