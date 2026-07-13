@@ -41,7 +41,7 @@ class Solution:
     def AtMost(self, nums: list[int], goal: int) -> int:
         if goal < 0:
             return 0
-
+ 
         left = 0
         right = 0
         Sum = 0
