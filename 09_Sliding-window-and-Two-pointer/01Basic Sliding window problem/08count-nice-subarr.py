@@ -50,3 +50,10 @@ class Solution:
 nums = [1,1,2,1,1]
 object = Solution()
 print(object.numberOfSubarrays(nums,3))   
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
+
