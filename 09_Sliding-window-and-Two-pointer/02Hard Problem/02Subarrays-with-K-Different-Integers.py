@@ -86,7 +86,7 @@ class Solution:
         return count 
     def subarraysWithKDistinct(self, nums: list[int], k: int) -> int:
 
-        return self.Atmost(nums,k) - self.Atmost(nums,k-1)
+        return self.Atmost(nums,k) - self.Atmost(nums,k-1)   #  Exactly(K) = AtMost(K)-AtMost(K-1)
                             
         
 nums = [1,2,1,3,4]
@@ -98,3 +98,32 @@ Time complexity:O(n)
 Space complexity:O(n)
 
 '''
+
+'''
+               Exactly K
+
+               AtMost(K)
+        ┌─────────────────────┐
+        │                     │
+        │ 1 distinct          │
+        │ 2 distinct          │
+        │ 3 distinct          │
+        │                     │
+        └─────────────────────┘
+
+                  Minus
+
+             AtMost(K-1)
+
+        ┌─────────────────┐
+        │1 distinct       │
+        │2 distinct       │
+        └─────────────────┘
+
+                 Equals
+
+        ┌─────────────────┐
+        │3 distinct only  │
+        └─────────────────┘
+'''
+
