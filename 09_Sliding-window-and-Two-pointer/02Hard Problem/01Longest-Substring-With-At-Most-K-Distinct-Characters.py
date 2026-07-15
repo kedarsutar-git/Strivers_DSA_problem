@@ -46,4 +46,41 @@ Time Complexity:O(n**2)
 Space Complexity:O(n)
 '''
 
+
+# Optimal method 
+
+class Solution:
+    def LongestSubstr(Self,s:str,k:int) ->int:
+        maxlen = 0
+        left, right = 0, 0
+        frq = {}
+        while(right<len(s)):
+            if(s[right] in frq):
+                frq[s[right]] += 1
+
+            else:
+                frq[s[right]] = 1
+
+            while(len(frq)>k):
                 
+                frq[s[left]] -=1
+
+                if(frq[s[left]]==0):
+                    del frq[s[left]]
+
+                left += 1
+
+            maxlen = max(maxlen,right-left+1)
+
+            right += 1
+
+        return maxlen
+
+s = "aababbcaacc"
+object = Solution()
+print(object.LongestSubstr(s,2)) 
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(k)
+'''
