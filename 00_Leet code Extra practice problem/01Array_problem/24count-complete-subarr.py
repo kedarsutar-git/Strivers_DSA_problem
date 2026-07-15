@@ -24,7 +24,7 @@ Output: 10
 Explanation: The array consists only of the integer 5, so any subarray is complete. The number of subarrays that we can choose is 10.
  
 
-Constraints:
+Constraints:  
 
 1 <= nums.length <= 1000
 1 <= nums[i] <= 2000
@@ -66,3 +66,52 @@ Time Compleixty:O(n**2)
 Space Complexity:O(n+n)
 '''
 
+
+# Optimal method
+#  
+class Solution:
+    def countSubarr(self, nums: list[int]) -> int:
+
+        totalDistinct = len(set(nums))
+
+        left = 0
+        right = 0
+        count = 0
+        freq = {}
+
+        while right < len(nums):
+
+            if nums[right] in freq:
+                freq[nums[right]] += 1
+            else:
+                freq[nums[right]] = 1
+
+            while len(freq) == totalDistinct:
+
+                # Every subarray starting at 'left' and ending at
+                # right, right+1, ..., n-1 will remain complete.
+                count += len(nums) - right
+
+                freq[nums[left]] -= 1
+
+                if freq[nums[left]] == 0:
+                    del freq[nums[left]]
+
+                left += 1
+
+            right += 1
+
+        return count
+
+
+# Driver Code
+nums = [1, 3, 1, 2, 2]
+
+obj = Solution()
+print(obj.countSubarr(nums))       
+
+
+'''
+Time Compleixty:O(n)
+Space Complexity:O(n)
+'''
