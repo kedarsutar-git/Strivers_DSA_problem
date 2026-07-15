@@ -54,5 +54,5 @@ print(object.numofSubarr(nums,3,4))
 
 '''
 Time Complexity:O(n)
-Space Complexity:O(1)
+Space Complexity:O(114)
 '''
