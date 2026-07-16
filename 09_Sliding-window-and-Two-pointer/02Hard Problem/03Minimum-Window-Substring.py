@@ -183,5 +183,11 @@ t = "ABC"
 object = Solution()
 print(object.minWindow(s,t))
 
+'''
+Time Complexity:O(n)
+Space Complexity:O(k)
+
+'''
+
 
         
