@@ -1,18 +1,23 @@
 # Brute Force method
 # Using Two pointer Method
-def Maj(arr):
-    n = len(arr)
-    frq = 0
-    for i in range(n):
-        for j in range(i,n):
-            if(arr[i]==arr[j]):
-                frq += 1
+class Solution:
+    def Majoritynum(self,nums:list[int]) ->int:
+        
+        for i in range(len(nums)):
+            count = 0
+            for j in range(len(nums)):
+                if(nums[i]==nums[j]):
+                    count += 1
 
-        if(frq>n/2):
-            return arr[i]
+            if(count>len(nums)//2):
+                return nums[i]
+            
+        return -1
+        
 
-arr = [1,2,1,2,1,2,2,2]
-print(Maj(arr))                
+object = Solution()
+nums =[2,2,1,1,1,2,2]
+print(object.Majoritynum(nums))                   
 
 '''
 Time Complexity : O(n**2)
@@ -21,26 +26,26 @@ Space Complexity: O(1)
 
 
 # Better Method
-# 1st sort 
-def Majority(arr):
-    n = len(arr)
-    arr.sort()
-    frq = 1
-    ans = arr[0]
-    for i in range(1,n):
-        if(arr[i]==arr[i-1]):
-            frq +=1
+class Solution:
+    def Majorityele(self,nums:list[int]) ->int:
+        count_map = {}
+        for num in nums:
+            if num in count_map:
+                count_map[num] += 1
 
-        else:
-            frq = 1
-            ans = arr[i]
-        if(frq>n/2):
-          return ans            
-    return ans
-arr = [0,1,2,0,1,2,2,1,2,2]
+            else:
+                count_map[num] = 1
 
-print(Majority(arr))
-    
+            if(count_map[num]>len(nums)//2):
+                return num
+            
+        return -1    
+
+object = Solution()
+nums = [2,2,1,1,1,2,2]
+print(object.Majorityele(nums))
+
+
 '''
 Time Complexity : O(nlog(n))
 Space Complexity : O(1)
@@ -61,7 +66,16 @@ class Solution:
             else:
                 frq-=1
 
-        return ans 
+        count = 0
+        for num in nums:
+            if(num==ans):
+                count += 1
+
+        if(count>len(nums)//2):
+            return ans 
+
+        return -1
+            
 nums = [1,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4]
 object = Solution()
 print(object.majority(nums))         

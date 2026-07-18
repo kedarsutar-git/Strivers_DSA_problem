@@ -44,3 +44,8 @@ class Solution:
 arr = [9, 4, 20, 3, 10, 5]
 object = Solution()
 print(object.subarr(arr,33)) 
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+'''
