@@ -21,6 +21,29 @@ Output: -2
 Explanation:
 The element on index 0 or index 3 make up the largest sum when taken as a subarray
 '''
+# Brute force method 
+class Solution:
+    def MaxSum(self,nums:list[int]) ->int:
+        maxsum = 0
+        for i in range(len(nums)):
+            Sum = 0
+            for j in range(i,len(nums)):
+                Sum += nums[j]
+
+                maxsum = max(maxsum,Sum)
+
+        return maxsum
+
+nums =  [1,2,5,3,2,4,6,4,3,5,3]  
+object = Solution()
+print(object.MaxSum(nums))            
+
+'''
+Time Complexity:O(n^2)
+Space Complexity:O(1)
+
+'''
+
 
 # optimal method(kadanes algorithm)
 class Solution:
@@ -43,20 +66,7 @@ space complexity:O(1)
 '''
 
 
-class Solution:
-    def SubArrSum(self,nums:list[int]) ->int:
-        current_sum,Max_sum = 0,0
-        for i in range(len(nums)):
-            current_sum += nums[i]
-            Max_sum = max(current_sum,Max_sum)
 
-            if(current_sum<0):
-                current_sum = 0
-
-        return Max_sum
-nums = [1,2,5,3,2,4,6,4,3,5,3]
-object = Solution()
-print(object.SubArrSum(nums))
 
 
 
