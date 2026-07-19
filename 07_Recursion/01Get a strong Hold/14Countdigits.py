@@ -10,4 +10,4 @@ class Solution:
         print(digit,end=" ")
 
 object = Solution()
-print(object.printdig(1234))
+object.printdig(1234)

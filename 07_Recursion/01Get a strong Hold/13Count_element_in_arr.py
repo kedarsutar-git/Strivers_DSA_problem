@@ -12,3 +12,5 @@ arr = [12,12,34,56,78,12,12,56,76,6512]
 object = Solution()
 print(object.CountNum(arr,0,12,0))    
     
+
+

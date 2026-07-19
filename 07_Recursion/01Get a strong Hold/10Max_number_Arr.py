@@ -12,3 +12,7 @@ class Solution:
 object = Solution()
 arr = [12,34,56,76]
 print(object.Maxnumber(arr,0,arr[0]))
+
+
+
+

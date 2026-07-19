@@ -8,5 +8,8 @@ class Solution:
 
 object = Solution()
 arr = [1,2,3,4,5,6,7,8,9]
-print(object.PrintArr(arr,1))       
+object.PrintArr(arr,1)  
 
+
+
+     

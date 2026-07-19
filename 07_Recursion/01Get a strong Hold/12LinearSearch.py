@@ -12,4 +12,12 @@ class Solution:
     
 arr = [12,23,45,67]
 object= Solution()
-print(object.search(arr,0,671))    
+print(object.search(arr,0,67))    
+
+
+
+
+ 
+    
+    
+      

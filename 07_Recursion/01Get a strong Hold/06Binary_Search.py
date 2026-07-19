@@ -20,5 +20,3 @@ print(object.Bs(nums,0,len(nums)-1,7))
 
     
 
-
-        
