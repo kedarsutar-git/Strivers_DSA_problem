@@ -1,12 +1,12 @@
 class Solution:
-    def subseq(self,s:str,index,current,List):
+    def subseq(self,s:str,index,currentstr,List):
         if(index==len(s)):
-            List.append(current)
+            List.append(currentstr)
             return 
         
-        self.subseq(s,index+1,current + s[index],List)
+        self.subseq(s,index+1,currentstr + s[index],List)
     
-        self.subseq(s,index+1,current,List) 
+        self.subseq(s,index+1,currentstr,List) 
     
     
 
