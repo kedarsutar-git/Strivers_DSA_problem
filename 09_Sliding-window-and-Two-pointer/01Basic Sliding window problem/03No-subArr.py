@@ -19,9 +19,8 @@ Output: 2
 Explanation: The subarrays are [1, 2] and [3].
 
 Explanation:
-As mentioned in the video, this is a Pattern 3 problem. Because the condition is constant (sum exactly equals 
-), it is often difficult to use a simple sliding window because negative numbers can make the sum non-monotonic.
-
+As mentioned in the video, this is a Pattern 3 problem. Because the condition is constant (sum exactly equals), 
+it is often difficult to use a simple sliding window because negative numbers can make the sum non-monotonic.
 Approximation Strategy: One effective approach to solve this is to treat it as finding the count of subarrays where
 sum <= k and subtracting the count of subarrays where sum <= k - 1.
 Standard Approach: While the video explains the logic behind this pattern, most standard implementations for this 
@@ -83,9 +82,41 @@ object = Solution()
 print(object.subarrsum(nums,2))    
 
 '''
-Time Complexity:O()
+Time Complexity:O(n)
 Space Complexity:O(1)
 '''
+
+
+# This method use for only positive number in the arr 
+
+class Solution:
+     def countsubarr(self,nums:list[int],k:int):
+        count = 0
+        right,left = 0,0
+        Sum = 0
+        count = 0
+
+        while(right<len(nums)):
+            Sum = Sum+nums[right]
+            while(Sum>k):
+                Sum = Sum - nums[left]
+
+                left += 1
+
+
+            if(Sum==k):
+                count += 1
+
+            right += 1
+
+    
+        return count
+
+nums = [1,1,1]
+object = Solution()
+print(object.countsubarr(nums,2))                              
+
+
    
     
 
