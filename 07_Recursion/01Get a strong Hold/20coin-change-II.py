@@ -52,9 +52,9 @@ class Solution:
         if(index==len(coins)):
             return 0
 
-        include = self.coinchange(coins,index,amount-coins[index])
+        include = self.coinchange(coins,index,amount-coins[index]) # repets the same coin amount is decr
 
-        exlude = self.coinchange(coins,index+1,amount)
+        exlude = self.coinchange(coins,index+1,amount)   # move to next coin amount not changes
 
         totalcoins = include+exlude
 
