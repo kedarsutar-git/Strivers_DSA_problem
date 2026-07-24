@@ -69,7 +69,11 @@ object = Solution()
 s = "leetcode"
 print(object.maxVowels(s,3))
               
+'''
+Time complexity:(n)
+Space Complexity:O(1)
 
+'''
                 
 
 
