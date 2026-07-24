@@ -103,13 +103,10 @@ class Solution:
 
                 left += 1
 
-
             if(Sum==k):
                 count += 1
-
             right += 1
-
-    
+            
         return count
 
 nums = [1,1,1]
