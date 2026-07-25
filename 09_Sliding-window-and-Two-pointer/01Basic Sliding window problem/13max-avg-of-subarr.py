@@ -50,3 +50,4 @@ class Solution:
 object = Solution()        
 nums = [5]
 print(object.MaxAvgsubarr(nums,1))
+

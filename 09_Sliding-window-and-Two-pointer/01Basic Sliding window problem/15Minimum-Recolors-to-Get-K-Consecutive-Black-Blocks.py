@@ -40,7 +40,6 @@ blocks[i] is either 'W' or 'B'.
 class Solution:
     def MinRecolor(self,nums:list[int],k:int) ->int:
         ans =float("inf")
-
         for i in range(len(nums)):
             white = 0
             for j in range(i,len(nums)):
@@ -95,4 +94,4 @@ Sapce Complexity:O(1)
 
 '''
 
-                
+

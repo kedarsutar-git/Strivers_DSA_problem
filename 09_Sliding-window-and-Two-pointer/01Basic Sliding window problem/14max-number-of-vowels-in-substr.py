@@ -41,6 +41,36 @@ Continue.
 '''
 
 
+# Brute force method 
+class Solution:
+    def maxvowels(self,nums:str,k:int) ->int:
+        vowels = "aeiou"
+        maxcount = 0
+        for i in range(len(nums)):
+            currentcount = 0
+            for j in range(i,len(nums)):
+
+                if(nums[j] in vowels):
+                    currentcount += 1
+
+                length = j-i+1
+                if(length==k):
+                    maxcount = max(maxcount,currentcount)
+
+        return maxcount
+
+object = Solution()
+nums ="aeiou"
+print(object.maxvowels(nums,2))
+
+'''
+Time Complexity:O(n^2)
+Space Complexity:O(1)
+
+'''
+
+# optimal method 
+
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
         vowles = "aeiou"
@@ -74,7 +104,13 @@ Time complexity:(n)
 Space Complexity:O(1)
 
 '''
-                
 
 
-        
+
+
+
+
+
+
+
+
