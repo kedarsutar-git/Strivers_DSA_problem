@@ -72,7 +72,8 @@ class Solution:
 
             # Shrink the window if there are more than 2 fruit types
             while len(count_map) > 2:
-                count_map[nums[left]] -= 1
+                if(nums[left] in count_map):
+                    count_map[nums[left]] -= 1
 
                 if count_map[nums[left]] == 0:
                     del count_map[nums[left]]
