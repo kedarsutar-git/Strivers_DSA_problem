@@ -56,3 +56,41 @@ Time Complexity:O(n^2)
 Sapce Complexity:O(n)
 
 '''
+
+# Optimal method 
+class Solution:
+    def countsubarr(self,nums:list[int],k:int) ->int:
+        right,left = 0,0
+        count = 0
+        count_map = {}
+        maxnum = max(nums)
+        while(right<len(nums)):
+            if nums[right] in count_map:
+                count_map[nums[right]] +=1
+
+            else:
+                count_map[nums[right]] = 1
+
+            while(count_map.get(maxnum,0)>=k):
+                count +=len(nums)-right
+
+                count_map[nums[left]] -=1
+
+                if(count_map[nums[left]]==0):
+                    del count_map[nums[left]]
+
+                left +=1
+            right+=1
+
+        return count
+
+nums = [1,3,2,3,3]
+
+object = Solution()
+print(object.countsubarr(nums,2))            
+
+'''
+Time Complexity:O(n)
+Sapce Complexity:O(1)
+
+'''
