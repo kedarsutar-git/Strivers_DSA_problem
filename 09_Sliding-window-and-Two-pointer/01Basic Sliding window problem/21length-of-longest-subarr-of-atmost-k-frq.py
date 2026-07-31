@@ -47,17 +47,17 @@ class Solution:
 
         while(right<len(nums)):
             if nums[right] in count_map:
-                count_map[nums[right]] += 1
+                count_map[nums[right]] += 1 # count the frq of number in the array 
 
             else:
                 count_map[nums[right]] = 1
 
-            while(count_map[nums[right]]>k): # invalid condtion 
+            while(count_map[nums[right]]>k): # invalid condition 
                 count_map[nums[left]] -= 1
                 left += 1
 
-            if(count_map[nums[right]]<=k):
-                maxlen = max(maxlen,right-left+1)
+            if(count_map[nums[right]]<=k):  # Valid condition
+                maxlen = max(maxlen,right-left+1)  # udate the final answer 
 
             right +=1
 
