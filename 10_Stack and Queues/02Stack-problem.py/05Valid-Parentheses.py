@@ -56,7 +56,7 @@ class Solution:
             if(char=="(" or char=="{" and char=="["):
                 stack.append(char)
 
-            else:
+            else:   # if close braket top and pop the braket in the stack 
                 if(len(stack)!=0):
                     top = stack[-1]
 
