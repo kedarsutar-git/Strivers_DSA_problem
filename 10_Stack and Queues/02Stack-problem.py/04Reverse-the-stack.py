@@ -10,25 +10,33 @@ Input stack: [1, 2, 3, 4, 5]
 Output stack: [5, 4, 3, 2, 1]
 '''
 class Solution:
-    def reversestack(self,stack:list[int]) ->list[int]:
-        right,left = 0,len(stack)-1
+    def reversestack(self, stack: list[int]) -> list[int]:
+        if len(stack) <= 1:
+            return stack
 
-        while(right<left):
-            stack[right],stack[left] = stack[left],stack[right]
-
-            right +=1
-            left -=1
-
+        top = stack.pop()
+        self.reversestack(stack)
+        self._insert_at_bottom(stack, top)
         return stack
 
-stack = [1,2,3,4,5]
-object = Solution()
-print(object.reversestack(stack))
+    def _insert_at_bottom(self, stack: list[int], value: int) -> None:
+        if not stack:
+            stack.append(value)
+            return
+
+        top = stack.pop()
+        self._insert_at_bottom(stack, value)
+        stack.append(top)
+
+
+stack = [1, 2, 3, 4, 5]
+obj = Solution()
+print(obj.reversestack(stack))
 
 
 '''
-Time Complexity:O(n)
-Space Complexity:O(1)
+Time Complexity: O(n^2) in the worst case due to recursive bottom insertions
+Space Complexity: O(n) due to recursion stack
 
 '''
 
