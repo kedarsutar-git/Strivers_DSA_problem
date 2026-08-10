@@ -15,3 +15,7 @@ print(object.Prime(num))
 Time Complexity:O(n)
 Space Complexity
 '''
+
+
+
+    

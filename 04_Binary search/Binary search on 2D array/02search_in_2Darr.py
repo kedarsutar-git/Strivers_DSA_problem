@@ -25,6 +25,38 @@ Time Complexity:(n*m)
 space Complexity:O(1)
 '''
 
+
+# Better Method
+class Solution:
+    def SearchIn2D(self,nums:list[list[int]],tar:int) ->bool:
+        for i in range(len(nums)):
+            start = 0
+            end= len(nums[0])-1
+
+            while(start<=end):
+                mid = start +(end-start)//2
+
+                if(nums[i][mid]==tar):
+                    return True
+                    
+                elif(nums[i][mid]>tar):
+                    end = mid-1
+
+                else:
+                    start = mid+1
+
+        return False
+nums = [[3,4,7,9],[12,13,16,18],[20,21,23,29]]
+object = Solution()
+print(object.SearchIn2D(nums,29))
+
+'''
+Time Complexity:O(nlogm)
+Space Compexity:O(1)
+'''
+
+
+
 # Optimal method
 class Solution:
     def searchInRow(self, Matrix, target, midRow):
@@ -77,6 +109,10 @@ Sapce Complexity:O(1)
 '''
 
 
+
+
+
+        
 
 
 

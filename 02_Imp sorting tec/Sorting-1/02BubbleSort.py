@@ -1,37 +1,28 @@
 '''
-def BubbleSort(arr):
-    n = len(arr)
+Bubble Sort Working:
 
-    for i in range(n,0,-1):
-
-        for j in range(i-1):
-            if(arr[j]>arr[j+1]):
-
-
-                temp = arr[j]
-                arr[j]=arr[j+1]
-                arr[j+1]=temp
-
-    return arr 
-
-arr = [12,34,11,7,45,15] 
-
-print(BubbleSort(arr))
+1.Bubble Sort compares adjacent elements in the array.
+2.If the left element is greater than the right element, they are swapped.
+3.After one complete pass, the largest unsorted element moves to the end of the array.
+4.This process repeats for all remaining elements until the array becomes sorted.
 '''
 
-def bubbleSort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(n-i-1):
-            if(arr[j]>arr[j+1]):
-                temp = arr[j]
-                arr[j]=arr[j+1]
-                arr[j+1]=temp
 
-    return arr
-arr = [12,332,1,34,21,43,56]
-print(bubbleSort(arr))    
+class Solution:
+    def Sort(self,nums:list[int])->list[int]:
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)-1):
+                if(nums[j]>nums[j+1]):
+                    nums[j],nums[j+1],nums[j+1],nums[j]
+
+        return nums
+nums = [2,3,4,9,7,6]
+object = Solution()
+print(object.Sort(nums))
+
 '''
 Time Complexity:O(n**2)
 Space Complexity:O(1)
-'''        
+'''
+
+

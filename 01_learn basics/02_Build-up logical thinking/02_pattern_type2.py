@@ -5,23 +5,21 @@
   * * * *
  * * * * *
 '''
-#n = int(input("Enter the number:"))
-#for i in range(n):
-#    for j in range(i,n):
-#        print(" ",end=" ")
+n = int(input("Enter the number:"))
+for i in range(n):
+    for j in range(n-i):
+        print("",end=" ")
 
-#    for k in range(i):
-#        print("*",end=" ")
+    for k in range(i+1):
+        print("*",end=" ")
 
-#    for l in range(i,1,-1):
-#        print("*",end=" ")
+    for l in range(n-i):
+        print("",end=" ")
 
-#    print(" ")            
-
-
+    print()            
 
 
-'''n = 5
+'''
         *
        ***
       *****
@@ -29,23 +27,23 @@
     *********
 
 '''
-#N = 5
-#for i in range(N):
+N = int(input("Enter the number:"))
+for i in range(N):
 
             # Print leading spaces
-#            for j in range(N - i - 1):
-#                print(" ", end="")
+            for j in range(N - i - 1):
+                print(" ", end="")
 
             # Print stars
-#            for j in range(2 * i + 1):
-#                print("*", end="")
+            for j in range(2 * i + 1):
+                print("*", end="")
 
             # Print trailing spaces
-#            for j in range(N - i - 1):
-#                print(" ", end="")
+            for j in range(N - i - 1):
+                print(" ", end="")
 
             # Move to next row
-#            print()
+            print()
 
 
 
@@ -58,18 +56,18 @@
        ***
         *
 '''
-#N = 7
-#for i in range(N):
-#    for j in range(i):
-#        print(" ",end=" ")
+N = int(input("Enter the number:"))
+for i in range(N):
+    for j in range(i):
+        print(" ",end=" ")
 
-#    for j in range(2*N-(2*i+1)):
-#        print("*",end=" ")
+    for j in range(2*N-(2*i+1)):
+        print("*",end=" ")
 
-#    for j in range(i):
-#        print(" ",end=" ")
+    for j in range(i):
+        print(" ",end=" ")
 
-#    print(" ")            
+    print(" ")            
 
 
 
@@ -88,7 +86,7 @@
             *
 
 '''
-n = 9
+n = int(input("Enter the number:"))
 for i in range(n):
     for j in range(n -i-1):
         print(" ",end=" ")
@@ -128,22 +126,22 @@ for i in range(n):
 *
 '''
          
-#N = 5
-#for i in range(1, 2 * N):
+N = 5
+for i in range(1, 2 * N):
     
     # stars would be equal to the row no. until first half
-#    stars = i
+    stars = i
     
     # for the second half of the rotated triangle
-#    if i > N:
-#        stars = 2 * N - i
+    if i > N:
+        stars = 2 * N - i
     
     # printing stars in each row
-#    for j in range(stars):
-#        print("*", end="")
+    for j in range(stars):
+        print("*", end="")
     
     # move to next line
-#    print()
+    print()
 
 
 
@@ -157,11 +155,20 @@ for i in range(n):
 123  321
 12344321
 '''
-n = 5 
+n = int(input("Enter the number:"))
 for i in range(1,n):
-    for j in range(1,i+1):
+    for j in range(i):
+        print(j+1,end="")
+
+    for j in range(2*n-(2*i+2)):
+        print(" ",end="")
+
+    for j in range(i,0,-1):
         print(j,end="")
+
+
     print()    
+
 
 
 
@@ -174,14 +181,14 @@ for i in range(1,n):
 '''
 
 
-#n = 5
-#num =1
-#for i in range(1,n+1):
-#     for j in range(1,i+1):
-#          print(num,end=" ")
-#          num = num+1
+n = int(input("Enter the number:"))
+num =1
+for i in range(n):
+     for j in range(i+1):
+          print(num,end=" ")
+          num = num+1
 
-#     print("")     
+     print("")     
 
 
 
@@ -201,33 +208,33 @@ for i in range(1,n):
 * * * * * * * * * *
 '''
 
-#n =  5
-#space = 0
-#for i in range(n):
-#     for j in range(n-i):
-#         print("*",end=" ")
+n =  5
+space = 0
+for i in range(n):
+     for j in range(n-i):
+         print("*",end=" ")
      
-#     for j in range(space):
-#         print(" ",end=" ")
+     for j in range(space):
+         print(" ",end=" ")
 
-#     for j in range(n-i):
-#         print("*",end=" ")
-#     print("") 
-#     space+=2
+     for j in range(n-i):
+         print("*",end=" ")
+     print("") 
+     space+=2
      
-#space = 8
+space = 8
 
-#for i in range(n):
-#     for j in range(i+1):
-#         print("*",end=" ")
+for i in range(n):
+     for j in range(i+1):
+         print("*",end=" ")
      
-#     for j in range(space):
-#         print(" ",end=" ")
+     for j in range(space):
+         print(" ",end=" ")
 
-#     for j in range(i+1):
-#         print("*",end=" ")
-#     print("") 
-#     space-=2     
+     for j in range(i+1):
+         print("*",end=" ")
+     print("") 
+     space-=2     
 
 
 
@@ -247,32 +254,32 @@ for i in range(1,n):
 **      **
 *        *
 '''
-#n = 5
-#space = 2*n-2
-#for i in range(1,2*n):
-#    star =i
+n = 5
+space = 2*n-2
+for i in range(1,2*n):
+    star =i
 
-#    if(i>n):
-#        star = 2*n-i
+    if(i>n):
+        star = 2*n-i
     # star
-#    for j in range(star):
-#        print("*",end=" ")        
+    for j in range(star):
+        print("*",end=" ")        
     
     # space
-#    for j in range(space+1):
-#        print(" ",end=" ")
+    for j in range(space+1):
+        print(" ",end=" ")
      
     # star
-#    for j in range(star):
-#        print("*",end=" ")  
+    for j in range(star):
+        print("*",end=" ")  
 
-#    print(" ")
+    print(" ")
 
-#    if(i<n):
-#            space -=2
+    if(i<n):
+            space -=2
 
-#    else:
-#        space+=2        
+    else:
+        space+=2        
 
 
 

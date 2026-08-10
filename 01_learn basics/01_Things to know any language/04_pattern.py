@@ -135,16 +135,29 @@ for i in range(n):
  * * * * *
 
 '''
-for i in range(5):
-    for j in range(i,5):
-        print(" ",end=" ")
+n = int(input("Enter the number:"))
+for i in range(n):
+    for j in range(n-i):
+        print(" ",end="")
 
-    for k in range(i):
+    for k in range(i+1):
         print("*",end=" ")
 
-    for m in range(i,1,-1):
-        print("*",end=" ")
-    print(" ")            
+    for m in range(n-i):
+        print(" ",end="")
+
+    print()
+          
+
+
+
+
+
+
+
+
+
+
 
 
 

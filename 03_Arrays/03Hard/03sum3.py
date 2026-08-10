@@ -12,7 +12,7 @@ Notice that the order of the output and the order of the triplets does not matte
 # Brute force method:
 def sum3(nums):
     s = set()
-    temp =[]
+    temp =[]  
     ans = []
     for i in range(len(nums)):
         for j in range(i+1,len(nums)):

@@ -34,6 +34,39 @@ Time Complixity:(n*m)
 space Complixity:O(1)
 '''  
 
+
+
+# better 
+class Solution:
+    def Search2D(self,nums:list[list[int]],tar) ->int:
+        for i in range(len(nums)):
+            start = 0
+            end= len(nums[0])-1
+            while(start<=end):
+                mid = start+(end-start)//2
+
+                if(nums[i][mid]==tar):
+                    return [i,mid]
+                
+                elif(nums[i][mid]>tar):
+                        end = mid -1
+
+                else:
+                    start = mid+1
+
+        return -1
+
+nums =  [[3,4,7,9],[12,13,16,18],[20,21,23,29]] 
+object =Solution()
+print(object.Search2D(nums,29))
+
+'''
+Time Complexity:O(nlogm)
+Space Complexity:O(1)
+'''
+
+
+
 # Optimal method
 class Solution: 
     def SearchIn2Darr(self,Matrix:list[list[int]],target:int) ->bool:
@@ -59,4 +92,5 @@ print(object.SearchIn2Darr(Matrix,20))
 Time Complexity:O(m+n)
 space Complexity:O(1)
 '''
+
 

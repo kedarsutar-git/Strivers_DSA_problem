@@ -49,36 +49,26 @@ s consists of parentheses only '()[]{}'.
 class Solution:
     def isvalid(self,s:str) ->bool:
         stack = []
-        for i in range(len(s)):
-            char = s[i]
-
-            # if opening braket push into the stack
-            if(char=="(" or char=="{" and char=="["):
+        for char in s:
+            if char in "([{":
                 stack.append(char)
 
-            else:   # if close braket top and pop the braket in the stack 
-                if(len(stack)!=0):
-                    top = stack[-1]
+            else:
+                if not stack:
+                    return False 
+                top = stack.pop()
 
-                    if(char==")" and top == "("  or  char=="}" and top == "{"  or char=="]" and top =="["):
-                        stack.pop()
-
-                    else:
-                        False
-
+                if (char == ")" and top == "(") or (char == "}" and top == "{") or (char == "]" and top == "["):
+                    continue
                 else:
-                    False
+                    return False
 
+        return not stack
+                 
 
-        if(len(stack)==0):
-            return True 
-
-        else:
-            return False
-
-s =  "([])"
-object = Solution()
-print(object.isvalid(s))
+s = "([])"
+solution = Solution()
+print(solution.isvalid(s))
 
 '''
 Time complexity:O(n)

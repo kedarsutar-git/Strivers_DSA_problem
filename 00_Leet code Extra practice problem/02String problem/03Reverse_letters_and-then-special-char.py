@@ -96,5 +96,11 @@ s = ")ebc#da@f("
 object = Solution()
 print(object.reverseByType(s))
 
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
+
 
         

@@ -5,10 +5,11 @@
 * * * * *
 * * * * *
 '''
-#for i in range(5):
- #   for j in range(5):
- #       print("*",end=" ")
-  #  print()  
+n = int(input("Enter the number:"))
+for i in range(n):
+    for j in range(n):
+        print("*",end=" ")
+    print()  
 
 
 
@@ -19,12 +20,12 @@
 ****
 *****
 '''    
+n = int(input("Enter the number:"))
+for i in range(n):
+    for j in range(i+1):
+        print("*",end="")
 
-#for i in range(5):
-#    for j in range(i+1):
-#        print("*",end="")
-
-#    print()    
+    print()    
 
 
 
@@ -36,12 +37,12 @@
 1234
 12345
 '''   
+n = int(input("Enter the number:"))
+for i in range(n):
+    for j in range(i+1):
+        print(j+1,end="")
 
-#for i in range(5):
-#    for j in range(i+1):
-#        print(j+1,end="")
-
-#    print()    
+    print()    
 
 
 
@@ -53,12 +54,12 @@
 4444
 55555
 '''
+n = int(input("Enter the number:"))
+for i in range(n):
+    for j in range(i+1):
+        print(i+1,end="")
 
-#for i in range(5):
-#    for j in range(i+1):
-#        print(i+1,end="")
-
-#    print()    
+    print()    
 
 
 
@@ -69,17 +70,12 @@
 **
 *
 '''  
-#for i in range(6,0,-1):
-#    for j in range(i-1):
-#        print("*",end="")
-
-#    print()     
-n = 6
+n = int(input("Enter the number:"))
 for i in range(n):
-    for j in range(n-i-1):
-        print("*",end=" ")
-    print()    
+    for j in range(n-i):
+        print("*",end="")
 
+    print()     
 
 '''
 12345
@@ -88,41 +84,5 @@ for i in range(n):
 12
 1
 '''
-for i in range(6,0,-1):
-    for j in range(i-1):
-        print(j+1,end="")
-
-    print() 
 
 
-
-n = 7
-for i in range(n-4):
-    for j in range(n-5+i):
-        print("*",end=" ")
-
-    for j in range(n-5-i):
-        print(" ",end=" ")
-
-    for j in range(n-5+i):
-        print("*",end=" ")
-
-    print()
-
-for i in range(n,0,-1):
-    for j in range(i):
-        print("*",end=" ")
-
-    for j in range(n-i):
-        print(" ",end=" ")
-
-    for j in range(i):
-        print("*",end= " ") 
-    print()
-
-
-n = int(input("Enter the number:"))
-for i in range(n):
-    for j in range(n):
-        print("*",end=" ")
-    print()    

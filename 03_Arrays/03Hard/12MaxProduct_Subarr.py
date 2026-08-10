@@ -89,3 +89,7 @@ class Solution:
 nums = [2,3,-2,4]
 object = Solution()
 print(object.MaximunPro(nums)) 
+'''
+Time complexity:O(n)
+Sapce Complexity:O(1)
+'''

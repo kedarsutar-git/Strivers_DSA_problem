@@ -8,7 +8,7 @@ class Solution:
             nums[len(nums)-k:]=temp
         return nums
 
-nums = [1,2,3,4,5]
+nums = [1,2,3,4,5,6,7]
 object =Solution()
 print(object.leftRotateArr(nums,3))    
 '''
@@ -38,8 +38,8 @@ class Solution:
 
 
 obj = Solution()
-arr = [1, 2, 3, 4, 5]
-print(obj.leftRotate(arr, 2))
+arr = [1, 2, 3, 4, 5,6,7]
+print(obj.leftRotate(arr, 3))
 '''
 Time Complexity:O(n)
 Space Complexity:O(1)
