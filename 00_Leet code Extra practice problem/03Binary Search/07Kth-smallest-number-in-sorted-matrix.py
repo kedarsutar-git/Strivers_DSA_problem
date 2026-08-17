@@ -51,7 +51,45 @@ matrix = [[1,5,9],[10,11,13],[12,13,15]]
 print(object.kthsmallestnumber(matrix,8))
 
 '''
-Time Complexity:O(logn+n^2+n)
-Space Complexity:O(n)
+Time Complexity:O(n**2 logn )
+Space Complexity:O(n**2)
 
+'''
+
+# optimal method 
+class Solution:
+    def kthSmallest(self, matrix: list[list[int]], k: int) -> int:
+        left  = matrix[0][0]  # smallest number in the matrix 
+        right = matrix[len(matrix)-1][len(matrix)-1] # largest number in the matrix 
+
+        while(left<right):
+            mid = left + (right-left)//2
+
+            count = 0
+            row = len(matrix)-1
+            col = 0
+            while(row>=0 and col<len(matrix)):
+                if(matrix[row][col]<=mid):
+                    count += row + 1
+                    col += 1
+                
+                else:
+                    row -= 1
+
+            if(count<k):
+                left = mid + 1
+            
+            else:
+                right = mid
+        
+        return left 
+
+matrix =[[1,5,9],[10,11,13],[12,13,15]]
+
+object = Solution()
+print(object.kthSmallest(matrix,8))
+
+'''
+Time Complexity:O(nlogR)
+Space Complexity:O(1)
 '''
