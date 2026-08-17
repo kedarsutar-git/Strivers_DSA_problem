@@ -35,9 +35,9 @@ class Solution:
 
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
-                List.append(matrix[i][j])
+                List.append(matrix[i][j])  # add the number in the array 
 
-        List.sort()
+        List.sort()  # sort the array 
         count = 0
         for x in range(len(List)):
             count +=1
@@ -60,6 +60,7 @@ Space Complexity:O(n**2)
 class Solution:
     def kthSmallest(self, matrix: list[list[int]], k: int) -> int:
         left  = matrix[0][0]  # smallest number in the matrix 
+
         right = matrix[len(matrix)-1][len(matrix)-1] # largest number in the matrix 
 
         while(left<right):
@@ -93,3 +94,5 @@ print(object.kthSmallest(matrix,8))
 Time Complexity:O(nlogR)
 Space Complexity:O(1)
 '''
+
+
