@@ -97,6 +97,6 @@ nums = [3,9,2,1,7]
 print(object.largestnumber(nums,3))
 
 '''
-Time Complexity:O(n * k)
+Time Complexity:O(n*k)
 Space Complexity:O(n)
 '''
