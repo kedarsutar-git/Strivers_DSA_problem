@@ -51,6 +51,7 @@ Constraints:
 1 <= m, n <= 3 * 104
 1 <= k <= m * n
 '''
+# Brute force method 
 
 class Solution:
     def KthSmallestnumber(self,m:int,n:int,k:int) ->int:
@@ -85,3 +86,27 @@ print(object.KthSmallestnumber(3,3,5))
 Time Complexity : O(nm log(nm))	
 Space Complexity: O(nm)
 '''
+
+# optimal method 
+class Solution:
+    def findKthNumber(self, m: int, n: int, k: int) -> int:
+        start = 0
+        end = m*n
+
+        while(start<end):
+            mid = start + (end - start)//2
+
+            count = 0
+            for i in range(1,n+1):
+                count += min(m,mid//i)
+
+            if(count<k):
+                start = mid+1
+            else:
+                end = mid
+        
+        return start
+
+
+object = Solution()
+print(object.findKthNumber(3,3,5))
