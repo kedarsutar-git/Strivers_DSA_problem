@@ -24,3 +24,8 @@ class Solution:
 image = [[1,1,0],[1,0,1],[0,0,0]]
 object = Solution()
 print(object.flipAndInvertImage(image))
+
+'''
+Time Complexity:O(n^2)
+Space complexity:O(1)
+'''
