@@ -110,3 +110,4 @@ class Solution:
 
 object = Solution()
 print(object.findKthNumber(3,3,5))
+
