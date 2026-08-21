@@ -4,23 +4,28 @@ class Solution:
         maxcol = []
 
         for i in range(len(matrix)):
-            minnum = matrix[i][0]
+            minnum = matrix[i][0]  # constant the columns but row changes
 
             for j in range(len(matrix[0])):
                 if(matrix[i][j]<minnum):
                     minnum = matrix[i][j]
 
-                minrow.append(minnum)
+            minrow.append(minnum)
 
-        for i in range(len(matrix[0])):
-            maxnum = matrix[i][j]
+        for j in range(len(matrix[0])):
+            maxnum = matrix[0][j]  # constant the row but column changes
 
-            for j in range(len(matrix)):
+            for i in range(len(matrix)):
                 if(matrix[i][j]>maxnum):
                     maxnum = matrix[i][j]
 
-                maxcol.append(maxnum)
-        return maxcol ,minrow
+            maxcol.append(maxnum)
+        ans  = []
+        for num in minrow:
+            if num in maxcol:
+                ans.append(num)  # commen number both in the minrow and maxcol
+
+        return ans 
 
 object = Solution()
 matrix = [[3,7,8],[9,11,13],[15,16,17]]
