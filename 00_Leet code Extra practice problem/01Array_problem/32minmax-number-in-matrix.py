@@ -30,3 +30,5 @@ class Solution:
 object = Solution()
 matrix = [[3,7,8],[9,11,13],[15,16,17]]
 print(object.luckyNumbers(matrix))
+
+
