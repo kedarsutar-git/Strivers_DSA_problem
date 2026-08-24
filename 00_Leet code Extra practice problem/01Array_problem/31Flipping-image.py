@@ -29,3 +29,31 @@ print(object.flipAndInvertImage(image))
 Time Complexity:O(n^2)
 Space complexity:O(1)
 '''
+
+
+def matrix_multiplication(a, b): 
+    result = [] 
+    for i in range(len(a)): 
+        row = [] 
+        for j in range(len(b[0])): 
+            total = 0 
+            for k in range(len(b)):  # multiply corresponding values and add them 
+                total += a[i][k] * b[k][j] 
+            row.append(total) 
+        result.append(row) 
+    return result 
+ 
+
+def scalar_multiplication(matrix, scalar): 
+    result = [] 
+    for row in matrix: 
+        new_row = [] 
+        for value in row: 
+            new_row.append(value * scalar) 
+        result.append(new_row) 
+    return result 
+ 
+A = [[1, 2], [3, 4]] 
+B = [[5, 6], [7, 8]] 
+print("A + B:") 
+
