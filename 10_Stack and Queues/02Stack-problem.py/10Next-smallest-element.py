@@ -53,10 +53,10 @@ class Solution:
 
         for i in range(len(nums)-1,-1,-1):
 
-            while(stack and stack[-1]>=nums[i]):
+            while(len(stack)!=0 and stack[-1]>=nums[i]):
                 stack.pop()
 
-            if(stack):
+            if(len(stack)!=0):  # Stack is not empty 
                 ans[i] = stack[-1]
 
             stack.append(nums[i])
