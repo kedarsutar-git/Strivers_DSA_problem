@@ -55,3 +55,27 @@ Time Complexity:O(n**2)
 Space Complexity:O(n)
 
 '''
+
+
+# optimal method
+class Solution:
+    def nextLargerElement(self, arr):
+        stack = []
+        result = [-1]*len(arr)
+        for i in range(len(nums)-1,-1,-1):
+            while(len(stack)!=0 and stack[-1]<=arr[i]):
+                stack.pop()
+
+            if(len(stack)!=0):
+                result[i] = stack[-1]
+            stack.append(arr[i])
+            
+        return result   
+
+object = Solution()
+nums = [13, 7, 6, 12]
+print(object.nextLargerElement(nums))
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+'''
