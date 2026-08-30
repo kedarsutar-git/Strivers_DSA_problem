@@ -54,31 +54,41 @@ class Solution:
     def sumSubarrayMins(self, arr):
         n = len(arr)
 
-        # Next Smaller Element
-        nse = [n] * n
-        stack = []
+        # Function 1: Next Smaller Element
+        def findNSE():
+            nse = [n] * n
+            stack = []
 
-        for i in range(n - 1, -1, -1):
-            while stack and arr[stack[-1]] >= arr[i]:
-                stack.pop()
+            for i in range(n - 1, -1, -1):
+                while stack and arr[stack[-1]] >= arr[i]:
+                    stack.pop()
 
-            if stack:
-                nse[i] = stack[-1]
+                if stack:
+                    nse[i] = stack[-1]
 
-            stack.append(i)
+                stack.append(i)
 
-        # Previous Smaller or Equal Element
-        psee = [-1] * n
-        stack = []
+            return nse
 
-        for i in range(n):
-            while stack and arr[stack[-1]] > arr[i]:
-                stack.pop()
+        # Function 2: Previous Smaller or Equal Element
+        def findPSEE():
+            psee = [-1] * n
+            stack = []
 
-            if stack:
-                psee[i] = stack[-1]
+            for i in range(n):
+                while stack and arr[stack[-1]] > arr[i]:
+                    stack.pop()
 
-            stack.append(i)
+                if stack:
+                    psee[i] = stack[-1]
+
+                stack.append(i)
+
+            return psee
+
+        # Get NSE and PSEE
+        nse = findNSE()
+        psee = findPSEE()
 
         # Calculate answer
         MOD = 10**9 + 7
@@ -94,6 +104,9 @@ class Solution:
 
         return total
 
+
 object = Solution()
-arr  =[11,81,94,43,3]
+
+arr = [11, 81, 94, 43, 3]
+
 print(object.sumSubarrayMins(arr))

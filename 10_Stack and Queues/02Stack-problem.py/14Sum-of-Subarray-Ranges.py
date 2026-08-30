@@ -69,3 +69,132 @@ print(object.sumSubarr(nums))
 Time Complexity:O(n^2)
 Space Complexity:O(1)
 '''
+
+
+# Optimal method
+
+
+class Solution:
+    def subArrayRanges(self, nums):
+        n = len(nums)
+
+        # --------------------------------
+        # Next Smaller Element
+        # --------------------------------
+        def findNSE():
+            nse = [n] * n
+            stack = []
+
+            for i in range(n - 1, -1, -1):
+
+                while stack and nums[stack[-1]] >= nums[i]:
+                    stack.pop()
+
+                if stack:
+                    nse[i] = stack[-1]
+
+                stack.append(i)
+
+            return nse
+
+        # --------------------------------
+        # Previous Smaller or Equal
+        # --------------------------------
+        def findPSEE():
+            psee = [-1] * n
+            stack = []
+
+            for i in range(n):
+
+                while stack and nums[stack[-1]] > nums[i]:
+                    stack.pop()
+
+                if stack:
+                    psee[i] = stack[-1]
+
+                stack.append(i)
+
+            return psee
+
+        # --------------------------------
+        # Next Greater Element
+        # --------------------------------
+        def findNGE():
+            nge = [n] * n
+            stack = []
+
+            for i in range(n - 1, -1, -1):
+
+                while stack and nums[stack[-1]] <= nums[i]:
+                    stack.pop()
+
+                if stack:
+                    nge[i] = stack[-1]
+
+                stack.append(i)
+
+            return nge
+
+        # --------------------------------
+        # Previous Greater or Equal
+        # --------------------------------
+        def findPGEE():
+            pgee = [-1] * n
+            stack = []
+
+            for i in range(n):
+
+                while stack and nums[stack[-1]] < nums[i]:
+                    stack.pop()
+
+                if stack:
+                    pgee[i] = stack[-1]
+
+                stack.append(i)
+
+            return pgee
+
+        # Find all required indices
+        nse = findNSE()
+        psee = findPSEE()
+
+        nge = findNGE()
+        pgee = findPGEE()
+
+        # --------------------------------
+        # Calculate maximum contribution
+        # --------------------------------
+        max_sum = 0
+
+        for i in range(n):
+
+            left = i - pgee[i]
+            right = nge[i] - i
+
+            count = left * right
+
+            max_sum += nums[i] * count
+
+        # --------------------------------
+        # Calculate minimum contribution
+        # --------------------------------
+        min_sum = 0
+
+        for i in range(n):
+
+            left = i - psee[i]
+            right = nse[i] - i
+
+            count = left * right
+
+            min_sum += nums[i] * count
+
+        # Range = Maximum - Minimum
+        return max_sum - min_sum
+
+
+object = Solution()
+
+nums = [4,-2,-3,4,1]
+
+print(object.subArrayRanges(nums))
