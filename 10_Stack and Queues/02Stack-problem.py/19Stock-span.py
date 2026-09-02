@@ -82,3 +82,35 @@ print(object.stockSpan(arr))
 Time Complexity:O(n^2)
 Space Complexity:O(1)
 '''
+
+# Optimal method 
+class Solution:
+    def calculateSpan(self, prices):
+        n = len(prices)
+        span = [0] * n
+        stack = []  # stores indices of days
+
+        # First day span is always 1
+        span[0] = 1
+        stack.append(0)
+
+        # Process rest of the days
+        for i in range(1, n):
+            # Pop elements from stack while price[i] >= price[stack[-1]]
+            while stack and prices[i] >= prices[stack[-1]]:
+                stack.pop()
+
+            # If stack is empty, price[i] is greater than all previous prices
+            span[i] = i + 1 if not stack else (i - stack[-1])
+
+            # Push current day index onto stack
+            stack.append(i)
+
+        return span
+
+
+# Example usage
+prices = [100, 80, 60, 70, 60, 75, 85]
+sol = Solution()
+print(sol.calculateSpan(prices))
+
