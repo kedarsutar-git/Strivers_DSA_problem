@@ -113,4 +113,7 @@ class Solution:
 prices = [100, 80, 60, 70, 60, 75, 85]
 sol = Solution()
 print(sol.calculateSpan(prices))
-
+'''
+Time complexity:O(n)
+Space  complexity:O(n)
+'''
