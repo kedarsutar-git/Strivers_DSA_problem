@@ -21,19 +21,19 @@ class Solution:
                 stack.append(a)
         
         # Step 3: Potential celebrity
-        candidate = stack.pop()
+        celebrity = stack.pop()
         
         # Step 4: Verify candidate
         for i in range(n):
-            if i != candidate:
+            if i != celebrity:
                 # Candidate should not know anyone
-                if M[candidate][i] == 1:
+                if M[celebrity][i] == 1:
                     return -1
                 # Everyone should know candidate
-                if M[i][candidate] == 0:
+                if M[i][celebrity] == 0:
                     return -1
         
-        return candidate
+        return celebrity
 
 
 # Example usage:
