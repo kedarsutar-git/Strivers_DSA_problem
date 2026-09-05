@@ -1,4 +1,19 @@
 '''
+Example 1:
+Input:
+ M = [ [0, 1, 1, 0], [0, 0, 0, 0], [1, 1, 0, 0], [0, 1, 1, 0] ]
+Output:
+ 1
+Explanation:
+ Person 1 does not know anyone and is known by persons 0, 2, and 3. Therefore, person 1 is the celebrity.
+
+Example 2:
+Input:
+ M = [ [0, 1], [1, 0] ]
+Output:
+ -1
+Explanation:
+ Both persons know each other, so there is no celebrity.
 
 '''
 
