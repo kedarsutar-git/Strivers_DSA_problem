@@ -52,6 +52,7 @@ The repository is organized into the following major sections:
 | 08 | Bit Manipulation             | 🔄 Ongoing |
 | 09 | Sliding Window & Two Pointer | 🔄 Ongoing |
 | 10 | Stack & Queues               | 🔄 Ongoing |
+| 11 | Heaps                        | 🔄 Ongoing |
 
 > 🔄 This repository is continuously updated as I progress through the DSA roadmap.
 
@@ -83,6 +84,8 @@ Strivers_DSA_problem/
 ├── 09_Sliding-window-and-Two-pointer/
 │
 ├── 10_Stack and Queues/
+│
+├── 11_Heaps/
 │
 └── README.md
 ```
@@ -190,6 +193,16 @@ Throughout this repository, I am practicing important concepts and patterns such
 * Histogram Problems
 * Sliding Window Problems
 
+### 🔹 Heaps
+
+* Min Heap / Max Heap
+* Heapify
+* Priority Queue
+* Kth Smallest / Largest Element
+* Top K Problems
+* Heap-based Optimization
+* Merge K Sorted Lists
+
 ---
 
 # 📊 Progress Tracker
@@ -208,6 +221,7 @@ Throughout this repository, I am practicing important concepts and patterns such
 | Bit Manipulation             | 🔄 In Progress |
 | Sliding Window & Two Pointer | 🔄 In Progress |
 | Stack & Queues               | 🔄 In Progress |
+| Heaps                        | 🔄 In Progress |
 | Extra LeetCode Practice      | 🔄 In Progress |
 
 ---
@@ -332,6 +346,8 @@ Bit Manipulation
 Sliding Window & Two Pointer
   ↓
 Stack & Queues
+  ↓
+Heaps
   ↓
 Trees
   ↓
