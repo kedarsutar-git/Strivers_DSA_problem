@@ -44,3 +44,8 @@ words = ["leet","code"]
 x = "e"
 object = Solution()
 print(object.findWordsContaining(words,x))
+
+'''
+Time Complexity:(n)
+Space Complexity:(1)
+'''
