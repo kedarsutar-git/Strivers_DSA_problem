@@ -46,9 +46,6 @@ Constraints:
 s contains only lowercase English letters.
 
 '''
-s = "zaza"
-arr = list(s)
-print(arr)
 
 class Solution:
     def reverseDegree(self, s: str) -> int:
@@ -63,6 +60,7 @@ object = Solution()
 print(object.reverseDegree(s))
 
 '''
+
 Time Complexity:O(n)
 Space Complexity:O(1)
 
