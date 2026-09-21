@@ -44,3 +44,8 @@ class Solution:
 object =Solution()
 nums = [5,4,2,3]
 print(object.minnumGame(nums))
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+'''
