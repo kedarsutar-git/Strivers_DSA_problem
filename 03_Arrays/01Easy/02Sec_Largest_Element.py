@@ -45,4 +45,26 @@ Sacpe Complexity:O(1)
 '''
 
 
+class Solution:
+    def SecondLargestElement(self,nums:list[int]) ->int:
+        stack = []
+        for i in range(len(nums)):
+            stack.append(nums[i])
+
+            stack.sort()
+            stack.reverse()
+
+            if(len(stack)>2):
+                stack.pop()
+
+        return stack[-1]
+
+nums = [12,32,43,45,67,78]
+object =Solution()
+print(object.SecondLargestElement(nums))
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(n)
+'''
 
