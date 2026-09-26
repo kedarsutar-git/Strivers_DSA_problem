@@ -82,6 +82,25 @@ print(object.TransformArray(source,target))
 
 '''
 Time Compleixty:O(n^2)
-Space Compleixty:O(n)
+Space Compleixty:O(1)
 '''
+
+# Optimal method
+class Solution:
+    def TransformArray(self,source:list[int],target:list[int]) -> bool:
+        if(sum(source)!=sum(target)):
+            return False
+        return True
+
+object = Solution()
+source = [1,2,1]
+target = [0,2,5]
+print(object.TransformArray(source,target))
+
+'''
+Time Compexity:O(1)
+Space Complexity:O(1)
+
+'''
+
 
