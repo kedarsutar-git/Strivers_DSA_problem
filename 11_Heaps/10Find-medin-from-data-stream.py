@@ -39,7 +39,7 @@ Follow up:
 If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
 If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
 '''
-
+# Brute force method 
 class MedianFinder:
 
     def __init__(self):
