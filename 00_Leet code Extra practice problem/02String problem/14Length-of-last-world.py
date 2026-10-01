@@ -1,0 +1,54 @@
+'''
+Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+A word is a maximal substring consisting of non-space characters only.
+
+ 
+
+Example 1:
+
+Input: s = "Hello World"
+Output: 5
+Explanation: The last word is "World" with length 5.
+Example 2:
+
+Input: s = "   fly me   to   the moon  "
+Output: 4
+Explanation: The last word is "moon" with length 4.
+Example 3:
+
+Input: s = "luffy is still joyboy"
+Output: 6
+Explanation: The last word is "joyboy" with length 6.
+ 
+
+Constraints:
+
+1 <= s.length <= 104
+s consists of only English letters and spaces ' '.
+There will be at least one word in s.
+'''
+
+class Solution:
+    def lengthLastWorld(self,s:str) ->int:
+        count = 0
+        right = len(s) - 1
+
+        while(right>=0 and s[right]==' '):
+            right -= 1
+
+        while(right>=0 and s[right]!=' '):
+            count += 1
+            right -= 1
+
+        return count
+
+object = Solution()
+s = "luffy is still joyboy"
+print(object.lengthLastWorld(s))
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
