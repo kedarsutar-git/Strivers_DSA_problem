@@ -41,6 +41,7 @@ nums = [2,3,1,1,4]
 print(object.canJump(nums))
 
 '''
-Time Complexity: O(n)
-Space Complexity: O(1)
+Time Complexity:O(n)
+Space Complexity:O(1)
 '''
+
