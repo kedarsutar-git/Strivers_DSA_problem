@@ -113,3 +113,5 @@ object = LRUCache(2)
 print(object.put(1, 1))  # cache is {1=1}
 print(object.put(2, 2))  # cache is {1=1, 2=2}
 print(object.get(1))    # return 1
+
+
