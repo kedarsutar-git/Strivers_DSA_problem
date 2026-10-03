@@ -39,3 +39,13 @@ class Solution:
                 stack.append((current + "(", open_count + 1, close_count))
 
         return res
+
+object = Solution()
+n = 3
+print(object.generateParenthesis(n))
+
+'''
+Time Complexity:O(4^n/sqrt(n))
+Space Complexity:O(4^n/sqrt(n))
+
+'''
