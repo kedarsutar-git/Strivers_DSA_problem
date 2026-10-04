@@ -30,7 +30,7 @@ Return an answer array (of length seq.length) that encodes such a choice of A an
 Example 1:
 
 Input: seq = "(()())"
-Output: [0,1,1,1,1,0]
+Output: [0,1,1,1,1,0]15
 Example 2:
 
 Input: seq = "()(())()"
