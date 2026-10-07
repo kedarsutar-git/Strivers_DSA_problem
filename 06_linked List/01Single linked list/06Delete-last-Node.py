@@ -10,7 +10,7 @@ Output: [1, 2]
 
 Explanation:
 
-The last node was removed.
+The last node was removed
 
 Example 2:
 Input: linkedList = [1]
