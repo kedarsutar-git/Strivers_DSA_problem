@@ -1,3 +1,22 @@
+"""
+Delete a Node by Value in a Singly Linked List
+
+You are given the head of a singly linked list and an integer `x`. Delete the
+first node whose value is equal to `x`, then return the head of the updated
+linked list.
+
+If `x` is not present, return the original list unchanged. If the list is
+empty, return `None`.
+
+Example:
+    Input:  head = 10 -> 20 -> 30 -> None, x = 30
+    Output: 10 -> 20 -> None
+
+Constraints:
+    - The linked list may be empty.
+    - Node values and `x` are integers.
+"""
+
 
 class Node:
     def __init__(self,data):

@@ -1,13 +1,24 @@
-'''
-Input: 0->1->2, val = 2
-Output: True
-Explanation: Since element 2 is present in the list, return true.
+"""
+Search for a Value in a Singly Linked List
 
-Input: 12->5->8->7, val = 6 
-Output: False
-Explanation: The list does not contain element 6. Therefore, return false.
+You are given the head of a singly linked list and an integer `val`. Return
+`True` if any node in the linked list contains `val`; otherwise, return
+`False`.
 
-'''
+Example 1:
+    Input:  head = 0 -> 1 -> 2 -> None, val = 2
+    Output: True
+    Explanation: Node `2` is present in the linked list.
+
+Example 2:
+    Input:  head = 12 -> 5 -> 8 -> 7 -> None, val = 6
+    Output: False
+    Explanation: No node contains the value `6`.
+
+Constraints:
+    - The linked list may be empty.
+    - Node values and `val` are integers.
+"""
 
 class Node:
     def __init__(self,data):
