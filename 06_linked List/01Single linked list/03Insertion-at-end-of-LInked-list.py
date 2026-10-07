@@ -1,3 +1,22 @@
+"""
+Insert a Node at the End of a Singly Linked List
+
+You are given the head of a singly linked list and an integer `x`. Insert a
+new node containing `x` at the end of the list and return the head of the
+updated list.
+
+If the linked list is empty, the new node becomes the head.
+
+Example:
+    Input:  head = 10 -> 20 -> 30 -> None, x = 50
+    Output: 10 -> 20 -> 30 -> 50 -> None
+
+Constraints:
+    - The linked list may be empty.
+    - `x` is an integer.
+"""
+
+
 class Node:
     def __init__(self,data):
         self.data = data

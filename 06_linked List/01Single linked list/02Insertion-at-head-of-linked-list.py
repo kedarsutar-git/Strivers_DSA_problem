@@ -1,3 +1,22 @@
+"""
+Insert a Node at the Beginning of a Singly Linked List
+
+You are given the head of a singly linked list and an integer `x`. Insert a
+new node containing `x` at the beginning of the list and return the new head.
+
+The new node must become the first node, while the order of all existing nodes
+remains unchanged.
+
+Example:
+    Input:  head = 10 -> 20 -> 30 -> None, x = 50
+    Output: 50 -> 10 -> 20 -> 30 -> None
+
+Constraints:
+    - The linked list may be empty.
+    - `x` is an integer.
+"""
+
+
 class Node:
     def __init__(self,data):
         self.data = data
