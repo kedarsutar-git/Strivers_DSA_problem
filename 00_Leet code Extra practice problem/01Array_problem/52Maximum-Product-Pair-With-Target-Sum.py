@@ -81,7 +81,7 @@ print(object.maxprojectsum(nums,6))
 
 '''
 
-Time Complexity:O(n)
+Time Complexity:O(n^2)
 Space Complexity:O(1)
 
 '''
