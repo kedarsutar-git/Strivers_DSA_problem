@@ -62,9 +62,9 @@ Note: Please do not copy the description during the contest to maintain the inte
 '''
 
 class Solution:
-    def maxprojectsum(self,nums:list[int],target:int) ->int:
+    def maxprojectsum(self,nums:list[int],target:int) ->list[int]:
         ans = [-1,-1]
-        maxpro = float('-int')
+        maxpro = float('-inf')
         for i in range(len(nums)):
             for j in range(len(nums)):
                 if(nums[i]+nums[j]==target and nums[i]>nums[j] and i!=j):
@@ -76,8 +76,8 @@ class Solution:
         return ans 
 
 object = Solution()
-nums = []
-print(object.maxprojectsum(nums))
+nums = [3,3,5]
+print(object.maxprojectsum(nums,6))
 
 '''
 
@@ -85,4 +85,5 @@ Time Complexity:O(n)
 Space Complexity:O(1)
 
 '''
- 
+
+
