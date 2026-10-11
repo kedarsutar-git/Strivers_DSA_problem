@@ -7,6 +7,7 @@ Your task is to calculate the average waiting time for all processes when schedu
 
 Return the floor of the average waiting time, i.e., the largest whole number less than or equal to the actual average.
 
+
 Example 1:
 Input : bt = [4, 1, 3, 7, 2]
 
@@ -15,6 +16,7 @@ Output : 4
 Explanation : The total waiting time is 20.
 
 So the average waiting time will be 20/5 => 4.
+
 
 Example 2:
 Input : bt = [1, 2, 3, 4]
@@ -44,4 +46,9 @@ print(object.ShortestjobFirst(bt))
 '''
 Time Complexity:O(nlogn + n)
 Space Compexity:O(1)
+
 '''
+
+
+
+

@@ -1,0 +1,1 @@
+  vornelaxis = (n, s)

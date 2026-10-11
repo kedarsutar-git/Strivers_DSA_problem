@@ -20,25 +20,21 @@ Constraints:
 
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
-        if n == 0:
-            return []
+        result = []
 
-        res = []
-        stack = [("", 0, 0)]
-
-        while stack:
-            current, open_count, close_count = stack.pop()
-
+        def backtrack(current, open_count, close_count):
             if len(current) == 2 * n:
-                res.append(current)
-                continue
+                result.append(current)
+                return
+
+            if open_count < n:
+                backtrack(current + "(", open_count + 1, close_count)
 
             if close_count < open_count:
-                stack.append((current + ")", open_count, close_count + 1))
-            if open_count < n:
-                stack.append((current + "(", open_count + 1, close_count))
+                backtrack(current + ")", open_count, close_count + 1)
 
-        return res
+        backtrack("", 0, 0)
+        return result
 
 object = Solution()
 n = 3
