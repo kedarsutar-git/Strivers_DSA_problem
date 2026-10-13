@@ -30,6 +30,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
     def reverseBetween(self, head: ListNode | None, left: int, right: int) -> ListNode | None:
         current = head
