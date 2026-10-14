@@ -77,6 +77,7 @@ class Solution:
 
 object = Solution()
 num = 2
+
 targetsum = 17
 print(object.maxSumOfSquares(num,targetsum))
 
