@@ -38,28 +38,26 @@ Constraints:
 1 <= nums.length <= 100
 1 <= nums[i] <= 100
 '''
+# Brute Force method 
 
 class Solution:
     def sumCounts(self, nums: list[int]) -> int:
         count = 0
         ans = []
         for i in range(len(nums)):
-            
+
             for j in range(i,len(nums)):
                 subarray = []
                 for k in range(i,j+1):
                     subarray.append(nums[k])
                 ans.append(subarray) 
-        s = set()
+
         for num in ans:
             s =set(num)
             count += len(s)**2
 
-             
-
         return count
     
-
 nums = [1,2,1]
 object = Solution()
 print(object.sumCounts(nums))
@@ -69,3 +67,58 @@ Time Complexity:O(n^3)
 Space Complexity:O(n+m)
 '''
 
+# Optimal method 
+
+class Solution:
+    def sumCounts(self, nums: list[int]) -> int:
+        count = 0
+        all_subarr = []
+        for i in range(len(nums)):
+            curr_subarr = []
+            for j in range(i,len(nums)):
+                curr_subarr.append(nums[j])
+
+                all_subarr.append(list(curr_subarr))
+
+
+        for num in all_subarr:
+            s =set(num)
+            count += len(s)**2
+
+        return count
+    
+nums = [1,2,1]
+object = Solution()
+print(object.sumCounts(nums))
+
+
+'''
+Time Complexity:O(n^2)
+Space Complexity:O(n)
+'''
+
+# Optimal method
+class Solution:
+    def sumCounts(self, nums: list[int]) -> int:
+        count = 0
+        subarr = []
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)+1):
+                subarr.append(nums[i:j])
+
+        for num in subarr:
+            s =set(num)
+            count += len(s)**2
+
+        return count
+    
+
+nums = [1,2,1]
+object = Solution()
+print(object.sumCounts(nums))
+
+'''
+Time Complexity:O(n^2)
+Space Complexity:O(n)
+
+'''
