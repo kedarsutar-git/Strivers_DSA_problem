@@ -68,3 +68,27 @@ Time Complexity:O(n^2)
 Space Complexity:O(n)
 
 '''
+
+# Optimal method
+
+class solution:
+    def SubarrSumCount(self,nums:list[int]) ->int:
+
+        count = 0
+        Mod = 10**9+7
+        for i in range(len(nums)):
+            s = set()
+            for j in range(i,len(nums)):
+                s.add(nums[j])
+                count += len(s)**2
+        return count%Mod
+
+nums = [1,2,1]
+object = solution()
+print(object.SubarrSumCount(nums))
+
+'''
+Time Complexity:O(n^2)
+Space Complexity:O(1)
+
+'''
