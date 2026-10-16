@@ -10,12 +10,12 @@ class Solution:
                 for k in range(i,j+1):
                     subarray.append(nums[k])
 
-                    ans.append(subarray)
+                ans.append(subarray)
 
         return ans 
 
 object = Solution()
-nums = []
+nums = [1,2,3]
 print(object.genratesubarray(nums))
 
 
