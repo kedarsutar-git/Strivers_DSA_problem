@@ -65,8 +65,7 @@ class Solution:
             if(value>len(nums)//2):
                 ans = key
 
-        return ans         
-               
+        return ans            
 
 object = Solution()
 nums = [2,2,1,1,1,2,2]
