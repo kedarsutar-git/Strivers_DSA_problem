@@ -55,3 +55,9 @@ nums = [1,2,3]
 object = Solution()
 print(object.FindPivotIndex(nums))
 
+
+'''
+Time complexity:O(n)
+Space Complexity:O(1)
+
+'''
