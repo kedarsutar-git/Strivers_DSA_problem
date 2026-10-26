@@ -34,31 +34,20 @@ class Solution:
 
 object = Solution()
 s = "python"
-print(object.reverseWord(s))        \
-
-class Solution:
-    def reverseWord(self,string:str) ->str:
-
-        words = s.split(" ")
-        for word in words:
-            wordarr = list(word)
-            i = 0
-            j = len(wordarr) - 1
-
-            while(i<=j):
-                wordarr[i],wordarr[j] = wordarr[j],wordarr[i]
-
-                i += 1
-                j -= 1
-
-            "".join(wordarr)
-
-        
-
-object = Solution()
-s = "Let's take LeetCode contest"
 print(object.reverseWord(s))       
 
 
 
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        words = s.split(" ")
+        ans = ""
 
+        for word in words:
+            ans += word[::-1] + " "
+
+        return ans.strip()
+
+s = "i love python"
+obj = Solution()
+print(obj.reverseWords(s))
