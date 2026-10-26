@@ -43,7 +43,7 @@ Intervals[i].length = 2
 
 class Solution:
     def eraseOverlapIntervals(self, intervals: list[list[int]]) -> int:
-        # intervals.sort(key = lambda x :(x[1],x[0]))
+        intervals.sort(key = lambda x :(x[1],x[0]))
 
         count = 1
         last_num = intervals[0][1]
