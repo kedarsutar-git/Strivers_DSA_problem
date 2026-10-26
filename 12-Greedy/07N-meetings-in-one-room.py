@@ -26,8 +26,9 @@ class Solution:
 
         meetings.sort(key = lambda x:(x[1], x[0]))
         count = 0
-        last_end = -1
+        last_end = -1   
         for s, e in meetings:
+
             if s > last_end:
                 count += 1
                 last_end = e
