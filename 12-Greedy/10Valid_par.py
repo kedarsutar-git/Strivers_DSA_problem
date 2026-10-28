@@ -59,3 +59,10 @@ class Solution:
 object = Solution()
 s = "("
 print(object.ValidPar(s))
+
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
