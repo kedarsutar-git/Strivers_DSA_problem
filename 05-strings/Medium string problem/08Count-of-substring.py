@@ -49,10 +49,12 @@ class Solution:
                 if(odd_count<=1):
                     count += 1
 
-        return count 
+        return count
 
 
 s = "aba"
 object = Solution()
 print(object.countSubstrings(s))
+
+
 

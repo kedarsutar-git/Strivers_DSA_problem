@@ -21,7 +21,11 @@ Output: 1
 
 Explanation:
 The number 1 appears 4 times in the 6 sized array
+
+
+
 '''
+
 # Brute Force method
 # Using Two pointer Method
 class Solution:
