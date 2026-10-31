@@ -53,3 +53,58 @@ Time Complexity:O(n)+O(n)+O(n) = O(n)
 Space Complexity:O(n)
 
 '''         
+
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+class Solution:
+    def addOne(self,head):
+        ans = []
+        temp = head
+        while(temp is not None):
+            ans.append(temp.data)
+            temp = temp.next
+
+        for i in range(len(ans)-1,-1,-1):
+            if ans[i]!=9:
+                ans[i] += 1
+
+                break
+            else:       # ans[i]==9
+                ans[i] = 0
+
+            ans = [1] + ans
+        
+
+        k = 0 
+        temp = head
+        while(temp is not None):
+            temp.data = ans[k]
+            temp = temp.next
+
+            k += 1
+
+        return head
+
+
+
+
+head = Node(1)
+head.next = Node(2)
+head.next.next = Node(3)
+
+object = Solution()
+result = object.addOne(head)
+print(result)
+while(result is not None):
+    print(result.data,end= "->")
+
+    result = result.next
+
+print(None)
+
+arr1 = [123]
+arr2 = [1]
+print(arr1+arr2)
