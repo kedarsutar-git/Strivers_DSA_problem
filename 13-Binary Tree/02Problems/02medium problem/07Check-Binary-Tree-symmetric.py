@@ -70,3 +70,11 @@ root.right.right = TreeNonde(3)
 root.left.right = TreeNonde(5)
 root.right.left = TreeNonde(5)
 print(object.Symmetric(root))
+
+
+'''
+Time Complexity:O(n)  # where n is the number of nodes in the tree
+Space Complexity:O(h)  # where h is the height of the tree
+
+'''
+
