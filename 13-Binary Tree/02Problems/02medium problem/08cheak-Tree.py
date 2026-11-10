@@ -4,6 +4,14 @@ Given the root of a binary tree, return true if and only if every node’s value
 For any missing ( null ) child, its value is treated as 0.
 A leaf node automatically satisfies the rule because both children are null.
 Example 1:
+
+Binary Tree:
+      1
+     / \\
+    4   3
+   /
+  5
+
 Input: root = [1,4,3,5]
 
 Output: false
@@ -12,6 +20,14 @@ Explanation:
 
 The root is 1, but its children sum to 4 + 3 = 7. Since 1 ≠ 7, the tree violates the property.
 Example 2:
+
+Binary Tree:
+        10
+       /  \\
+      4    6
+     / \\  / \\
+    1   3 2   4
+
 Input: root = [10,4,6,1,3,2,4]
 
 Output: true
