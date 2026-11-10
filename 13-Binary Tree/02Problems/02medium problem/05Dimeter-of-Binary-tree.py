@@ -1,3 +1,26 @@
+'''
+Given the root of a binary tree, return the length of the diameter of the tree.
+
+The diameter is the number of edges in the longest path between any two nodes. The path may or may not pass through the root.
+
+Example 1:
+
+Binary Tree:
+        1
+       / \\
+      2   3
+     / \\
+    4   5
+
+Input: root = [1,2,3,4,5]
+Output: 3
+Explanation: One longest path is 4 -> 2 -> 1 -> 3.
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 10^4].
+'''
+
 class Node:
     def __init__(self,data):
         self.data = data

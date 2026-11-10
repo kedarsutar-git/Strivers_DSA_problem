@@ -6,14 +6,32 @@ Given a binary tree, determine if it is height-balanced.
 Example 1:
 
 
+Binary Tree:
+        3
+       / \\
+      9  20
+        /  \\
+       15   7
+
 Input: root = [3,9,20,null,null,15,7]
 Output: true
 Example 2:
 
 
+Binary Tree:
+          1
+         / \\
+        2   2
+       / \\
+      3   3
+     / \\
+    4   4
+
 Input: root = [1,2,2,3,3,null,null,4,4]
 Output: false
 Example 3:
+
+Binary Tree: empty tree
 
 Input: root = []
 Output: true

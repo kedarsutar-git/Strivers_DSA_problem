@@ -10,9 +10,27 @@ Note: A leaf is a node with no children.
 Example 1:
 
 
+Binary Tree:
+        3
+       / \\
+      9  20
+        /  \\
+       15   7
+
 Input: root = [3,9,20,null,null,15,7]
 Output: 2
 Example 2:
+
+Binary Tree:
+    2
+     \\
+      3
+       \\
+        4
+         \\
+          5
+           \\
+            6
 
 Input: root = [2,null,3,null,4,null,5,null,6]
 Output: 5
