@@ -62,5 +62,3 @@ Space Complexity:O(h)
 
 '''
 
-# Optimal method 
-

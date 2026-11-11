@@ -70,7 +70,6 @@ class Solution:
         
         return (self.CheckTree(root.left) and self.CheckTree(root.right))
 
-        
 
 object = Solution()
 
@@ -83,4 +82,6 @@ root.left.left.left = TreeNode(4)
 root.left.left.right = TreeNode(4)
 
 print(object.CheckTree(root))
+
+
 

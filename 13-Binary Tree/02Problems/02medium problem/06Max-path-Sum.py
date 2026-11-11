@@ -48,7 +48,7 @@ class TreeNode:
 
 class Solution:
     def maxPathSum(self, root: TreeNode) -> int:
-        self.maxi = float('-inf')
+        self.maxi = float('-inf')   # This initializes maxi to the smallest possible value. It’s useful when finding a maximum:
         
         def maxPathDown(node):
             # Base case: if the node is null, return 0
