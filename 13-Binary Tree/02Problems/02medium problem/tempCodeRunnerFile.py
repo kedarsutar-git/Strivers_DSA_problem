@@ -1,1 +1,0 @@
-self.maxi = float('-inf')

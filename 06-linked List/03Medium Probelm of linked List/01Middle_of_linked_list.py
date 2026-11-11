@@ -72,7 +72,9 @@ Sapce Complexity:O(1)
 '''
 
 
-
+nums = [1,2,3,4,0,8,2]
+array = list(set(sorted(nums)))
+print(array)
 
 
 

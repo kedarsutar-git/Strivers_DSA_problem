@@ -52,7 +52,7 @@ head.next.next.next.next = Node(3)
 
 obj = Solution()
 result = obj.deleteNodeWithValueX(head, 4)
-
+print(result)
 while result is not None:
     print(result.data, end=" -> ")
     result = result.next

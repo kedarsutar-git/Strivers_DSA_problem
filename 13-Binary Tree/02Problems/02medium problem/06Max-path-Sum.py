@@ -41,10 +41,10 @@ The number of nodes in the tree is in the range [1, 3 * 104].
 '''
 
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+    def __init__(self, val):
         self.val = val
-        self.left = left
-        self.right = right
+        self.left = None
+        self.right = None
 
 class Solution:
     def maxPathSum(self, root: TreeNode) -> int:
@@ -66,7 +66,7 @@ class Solution:
             return node.val + max(left_sum, right_sum)
         
         maxPathDown(root)   # Call the helper function to start the recursion
-        
+                                                                                                                                                                                                                                                                                                
         return self.maxi   # Return the maximum path sum found during the traversal
 
 

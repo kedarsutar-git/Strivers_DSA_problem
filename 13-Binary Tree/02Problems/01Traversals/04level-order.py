@@ -7,7 +7,7 @@ class Node:
 class Solution:
     def levelorder(self,root) -> list[list[int]]:
         if root is None:
-            return []
+            return []   
 
         q = []
         res = []
