@@ -1,437 +1,76 @@
-# 🚀 Striver's DSA A-Z Sheet — Python Solutions
+# Striver's A2Z DSA Sheet — Python Solutions
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA-Striver's%20A--Z%20Sheet-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Language-Python-yellow?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Practice-LeetCode-orange?style=for-the-badge&logo=leetcode" />
-  <img src="https://img.shields.io/github/last-commit/kedarsutar-git/Strivers_DSA_problem?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Roadmap-Striver's%20A2Z%20DSA%20Sheet-2563EB?style=for-the-badge" alt="Striver's A2Z DSA Sheet" />
+  <img src="https://img.shields.io/badge/Solutions-441-success?style=for-the-badge" alt="441 Python solutions" />
 </p>
 
-<p align="center">
-  <b>A structured collection of Python solutions for Striver's DSA A-Z Sheet.</b>
-  <br />
-  <i>Learn → Practice → Solve → Improve 🚀</i>
-</p>
-
----
-
-## 📌 About This Repository
-
-This repository contains my **Python solutions and practice work** based on **Striver's DSA A-Z Sheet**.
-
-The main goal of this repository is to build a strong foundation in **Data Structures and Algorithms**, improve problem-solving ability, understand common coding patterns, and prepare for technical interviews.
-
-The problems are organized topic-wise so that each concept can be learned progressively from **basic → intermediate → advanced**.
-
-### 🎯 Main Objectives
-
-* 🧠 Build strong DSA fundamentals
-* 💻 Solve problems using Python
-* 🔍 Understand different problem-solving approaches
-* ⚡ Improve time and space complexity
-* 🎯 Prepare for coding interviews
-* 📈 Track DSA learning progress
-* 🔁 Practice important coding patterns repeatedly
-
----
-
-# 📚 Topics Covered
-
-The repository is organized into the following major sections:
-
-| #  | Topic                        | Status     |
-| -- | ---------------------------- | ---------- |
-| 00 | LeetCode Extra Practice      | 🔄 Ongoing |
-| 01 | Learn the Basics             | 🔄 Ongoing |
-| 02 | Important Sorting Techniques | 🔄 Ongoing |
-| 03 | Arrays                       | 🔄 Ongoing |
-| 04 | Binary Search                | 🔄 Ongoing |
-| 05 | Strings                      | 🔄 Ongoing |
-| 06 | Linked List                  | 🔄 Ongoing |
-| 07 | Recursion                    | 🔄 Ongoing |
-| 08 | Bit Manipulation             | 🔄 Ongoing |
-| 09 | Sliding Window & Two Pointer | 🔄 Ongoing |
-| 10 | Stack & Queues               | 🔄 Ongoing |
-| 11 | Heaps                        | 🔄 Ongoing |
-
-> 🔄 This repository is continuously updated as I progress through the DSA roadmap.
-
----
-
-# 🗂️ Repository Structure
-
-```text
-Strivers_DSA_problem/
-│
-├── 00_Leet code Extra practice problem/
-│
-├── 01_learn basics/
-│
-├── 02_Imp sorting tec/
-│
-├── 03_Arrays/
-│
-├── 04_Binary search/
-│
-├── 05_strings/
-│
-├── 06_linked List/
-│
-├── 07_Recursion/
-│
-├── 08_Bits Manipulation/
-│
-├── 09_Sliding-window-and-Two-pointer/
-│
-├── 10_Stack and Queues/
-│
-├── 11_Heaps/
-│
-└── README.md
-```
-
-Each topic contains individual problem solutions written in **Python**.
-
----
-
-# 🧩 DSA Concepts Practiced
-
-Throughout this repository, I am practicing important concepts and patterns such as:
-
-### 🔹 Basics
-
-* Time & Space Complexity
-* Basic Mathematics
-* Basic Recursion
-* Hashing
-* Arrays
-* Functions and Problem-Solving Fundamentals
-
-### 🔹 Sorting
-
-* Selection Sort
-* Bubble Sort
-* Insertion Sort
-* Merge Sort
-* Quick Sort
-* Recursive Sorting Techniques
-
-### 🔹 Arrays
-
-* Traversal
-* Prefix Sum
-* Kadane's Algorithm
-* Hashing
-* Two Pointer
-* Sliding Window
-* Array Manipulation
-* Subarrays
-* Matrix Problems
-
-### 🔹 Binary Search
-
-* Binary Search
-* Lower Bound
-* Upper Bound
-* Search in Rotated Arrays
-* Binary Search on Answers
-* Search Space Reduction
-
-### 🔹 Strings
-
-* String Manipulation
-* Palindromes
-* Frequency Counting
-* String Hashing
-* Two Pointer Techniques
-* Pattern-Based Problems
-
-### 🔹 Linked List
-
-* Singly Linked List
-* Doubly Linked List
-* Fast & Slow Pointer
-* Reversal
-* Cycle Detection
-* Merging Linked Lists
-* Linked List Manipulation
-
-### 🔹 Recursion & Backtracking
-
-* Recursion Fundamentals
-* Subsequence Problems
-* Backtracking
-* Permutations
-* Combinations
-* Constraint-Based Problems
-
-### 🔹 Bit Manipulation
-
-* Bitwise AND / OR / XOR
-* Left and Right Shift
-* Set / Clear / Toggle Bits
-* Counting Set Bits
-* XOR-Based Problems
-* Bitwise Tricks
-
-### 🔹 Sliding Window & Two Pointer
-
-* Fixed Window
-* Variable Window
-* Longest / Shortest Subarray
-* Frequency-Based Windows
-* Two Pointer Optimization
-
-### 🔹 Stack & Queue
-
-* Stack Implementation
-* Queue Implementation
-* Monotonic Stack
-* Next Greater Element
-* Next Smaller Element
-* Parentheses Problems
-* Histogram Problems
-* Sliding Window Problems
-
-### 🔹 Heaps
-
-* Min Heap / Max Heap
-* Heapify
-* Priority Queue
-* Kth Smallest / Largest Element
-* Top K Problems
-* Heap-based Optimization
-* Merge K Sorted Lists
-
----
-
-# 📊 Progress Tracker
-
-> Progress is updated as new problems are solved.
-
-| Section                      | Progress       |
-| ---------------------------- | -------------- |
-| Learn the Basics             | 🔄 In Progress |
-| Sorting Techniques           | 🔄 In Progress |
-| Arrays                       | 🔄 In Progress |
-| Binary Search                | 🔄 In Progress |
-| Strings                      | 🔄 In Progress |
-| Linked List                  | 🔄 In Progress |
-| Recursion                    | 🔄 In Progress |
-| Bit Manipulation             | 🔄 In Progress |
-| Sliding Window & Two Pointer | 🔄 In Progress |
-| Stack & Queues               | 🔄 In Progress |
-| Heaps                        | 🔄 In Progress |
-| Extra LeetCode Practice      | 🔄 In Progress |
-
----
-
-# 🧠 Problem-Solving Approach
+This repository documents my Python practice while following [Striver's A2Z DSA Sheet](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet?open=none). Each directory contains standalone solutions grouped by topic, along with additional LeetCode practice.
 
-For every problem, the focus is not only on getting the correct answer but also on understanding **why the solution works**.
-
-The general approach is:
-
-```text
-Understand the Problem
-        ↓
-Identify the Pattern
-        ↓
-Try Brute Force
-        ↓
-Analyze Time & Space Complexity
-        ↓
-Optimize the Approach
-        ↓
-Implement in Python
-        ↓
-Test Edge Cases
-        ↓
-Review & Revisit
-```
-
-This approach helps develop the ability to recognize patterns rather than memorizing solutions.
-
----
-
-# ⚡ Complexity Matters
-
-A major goal of this repository is to understand the efficiency of every solution.
-
-Typical complexities explored include:
-
-| Complexity   | Example                                |
-| ------------ | -------------------------------------- |
-| `O(1)`       | Constant-time operations               |
-| `O(log n)`   | Binary Search                          |
-| `O(n)`       | Array Traversal                        |
-| `O(n log n)` | Merge Sort                             |
-| `O(n²)`      | Basic Brute Force                      |
-| `O(2ⁿ)`      | Some Recursive / Backtracking Problems |
-
-Whenever possible, solutions are optimized to reduce unnecessary computation and memory usage.
-
----
-
-# 🐍 Why Python?
-
-Python is used throughout this repository because it provides:
-
-* Clean and readable syntax
-* Powerful built-in data structures
-* Easy implementation of algorithms
-* Useful libraries such as `collections`, `heapq`, and `bisect`
-* Fast prototyping for algorithmic problems
-
-The focus, however, is on **understanding DSA concepts**, not simply using Python shortcuts.
-
----
-
-# 💻 Example Solution Style
-
-Solutions are written with readability and learning in mind.
-
-```python
-class Solution:
-    def solve(self, nums):
-        # Problem-solving logic
-        pass
-```
-
-The goal is to keep implementations:
+The A2Z sheet is a structured roadmap that progresses from programming foundations to interview-level topics such as trees, graphs, dynamic programming, tries, greedy algorithms, sliding windows, and advanced strings. This repository currently covers the topics listed below and will grow with the roadmap.
 
-* ✅ Simple
-* ✅ Readable
-* ✅ Efficient
-* ✅ Interview-friendly
-* ✅ Easy to revise
+## Repository map
 
----
+| Folder | A2Z area | Python solutions | Status |
+| --- | --- | ---: | --- |
+| [00-Leet code problem](./00-Leet%20code%20problem/) | Extra LeetCode practice | 122 | Ongoing |
+| [01-learn basics](./01-learn%20basics/) | Beginner problems and fundamentals | 37 | In progress |
+| [02-Imp sorting tec](./02-Imp%20sorting%20tec/) | Sorting | 6 | In progress |
+| [03-Arrays](./03-Arrays/) | Arrays | 40 | In progress |
+| [04-Binary search](./04-Binary%20search/) | Binary Search | 38 | In progress |
+| [05-strings](./05-strings/) | Strings — basic and medium | 16 | In progress |
+| [06-linked List](./06-linked%20List/) | Linked List | 34 | In progress |
+| [07-Recursion](./07-Recursion/) | Recursion and backtracking | 22 | In progress |
+| [08-Bits Manipulation](./08-Bits%20Manipulation/) | Bit Manipulation | 18 | In progress |
+| [09-Sliding-window-and-Two-pointer](./09-Sliding-window-and-Two-pointer/) | Sliding Window / Two Pointer | 30 | In progress |
+| [10-Stack and Queues](./10-Stack%20and%20Queues/) | Stack / Queues | 38 | In progress |
+| [11-Heaps](./11-Heaps/) | Heaps | 10 | In progress |
+| [12-Greedy](./12-Greedy/) | Greedy Algorithms | 13 | In progress |
+| [13-Binary Tree](./13-Binary%20Tree/) | Binary Trees | 17 | In progress |
 
-# 🎯 Interview Preparation
+> Counts are based on the Python files currently in each folder. Folder numbering reflects this repository's learning order; the A2Z sheet remains the reference roadmap.
 
-This repository is part of my preparation for technical coding interviews.
+## Current coverage
 
-The problems help strengthen skills required for:
+Completed work in this repository focuses on the following problem-solving patterns:
 
-* Coding rounds
-* Online assessments
-* Technical interviews
-* Competitive programming fundamentals
-* Problem-solving assessments
+- Foundations: basic maths, complexity, hashing, and core programming problems
+- Sorting: selection, bubble, insertion, merge, and quick sort techniques
+- Arrays and binary search: prefix sums, hashing, subarrays, matrix problems, search-space reduction, and binary search on answers
+- Strings, linked lists, recursion, and backtracking
+- Bitwise operations, sliding windows, two pointers, stacks, queues, heaps, and greedy algorithms
+- Binary tree traversals and tree-based problems
 
-The emphasis is on recognizing **DSA patterns**, analyzing complexity, and developing optimized solutions.
+## Roadmap ahead
 
----
+The corresponding A2Z sections that are not yet represented as top-level folders are:
 
-# 📈 Learning Roadmap
+1. Binary Search Trees
+2. Graphs
+3. Dynamic Programming
+4. Tries
+5. Advanced String Algorithms
+6. Maths
 
-```text
-Basics
-  ↓
-Sorting
-  ↓
-Arrays
-  ↓
-Binary Search
-  ↓
-Strings
-  ↓
-Linked List
-  ↓
-Recursion & Backtracking
-  ↓
-Bit Manipulation
-  ↓
-Sliding Window & Two Pointer
-  ↓
-Stack & Queues
-  ↓
-Heaps
-  ↓
-Trees
-  ↓
-Graphs
-  ↓
-Dynamic Programming
-  ↓
-Advanced DSA
-```
+## How to use this repository
 
-> The roadmap will continue to expand as I progress through the remaining topics.
+1. Open a topic folder from the repository map.
+2. Read and run the individual Python solution files.
+3. Attempt the related problem yourself first.
+4. Compare approaches, time complexity, and space complexity.
+5. Revisit problems regularly to reinforce patterns.
 
----
+## Learning principles
 
-# 🔗 Useful Resources
+The goal is more than reaching an accepted answer: understand the brute-force idea, improve it to an efficient approach, reason about correctness, and analyse time and space complexity.
 
-### 📘 Striver's DSA Resources
+## Reference
 
-The problems in this repository are based on the DSA roadmap created by **Striver (Raj Vikramaditya)**.
+- [Striver's A2Z DSA Sheet](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet?open=none)
+- [Take U Forward](https://takeuforward.org/)
+- [LeetCode](https://leetcode.com/)
 
-* **Striver's A2Z DSA Course**
-* **Take U Forward**
-* **LeetCode**
+## Disclaimer
 
----
-
-# ⭐ Support
-
-If this repository helps you in your DSA preparation:
-
-* ⭐ Star this repository
-* 🍴 Fork it
-* 👀 Follow my GitHub journey
-* 💡 Feel free to suggest improvements
-
-Every star and contribution is appreciated! 🙌
-
----
-
-# 🤝 Contributions
-
-This repository is primarily maintained as a personal DSA learning journey.
-
-However, suggestions, corrections, and improvements are welcome.
-
-If you find an issue:
-
-1. Open an Issue
-2. Explain the problem
-3. Suggest an improvement
-
-For larger improvements, feel free to submit a Pull Request.
-
----
-
-# 📜 Disclaimer
-
-This repository is intended for **educational and interview preparation purposes**.
-
-The problems are based on publicly available DSA learning resources and coding platforms. Problem statements are not reproduced here; only personal implementations and learning material are maintained in this repository.
-
----
-
-# 👨‍💻 Author
-
-### Kedar Sutar
-
-Aspiring Software Developer | Python | Data Structures & Algorithms | Machine Learning
-
-<p align="center">
-  <i>“Consistency beats intensity. Keep solving, keep learning, keep improving.”</i>
-</p>
-
----
-
-<p align="center">
-  ⭐ <b>Keep Coding. Keep Learning. Keep Growing. 🚀</b> ⭐
-</p>
-```
-
-### Why I recommend this version
-
-I structured it around the **actual folders in your repository**, rather than claiming topics that aren't currently present. Your GitHub repository currently shows 251 commits and the sections from Basics through Stack & Queues, so the README can naturally evolve as you add Trees, Graphs, DP, etc.
-
-One important improvement I made is the **progress/roadmap wording**: instead of falsely saying you've completed all of Striver's A-Z sheet, it clearly presents the repository as an **ongoing DSA journey**. That's more professional and credible on a resume/GitHub profile.
-
-You can paste the above directly into **`README.md`** in your repository. [Open your Strivers_DSA_problem repository](https://github.com/kedarsutar-git/Strivers_DSA_problem?utm_source=chatgpt.com)
+This is a personal learning repository for educational and interview-preparation purposes. Problem statements are not reproduced here; the code reflects my own practice implementations.
