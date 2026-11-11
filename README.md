@@ -31,6 +31,69 @@ The A2Z sheet is a structured roadmap that progresses from programming foundatio
 
 > Counts are based on the Python files currently in each folder. Folder numbering reflects this repository's learning order; the A2Z sheet remains the reference roadmap.
 
+## Folder structure
+
+```text
+Strivers_DSA_problem/
+├── 00-Leet code problem/
+│   ├── 01Array_problem/
+│   ├── 02String problem/
+│   ├── 03Binary Search/
+│   ├── 04Linked List/
+│   └── 05sliding window and two pointer problem/
+│       ├── 01fixed-size-window-problem/
+│       └── 02variable-size-window-problem/
+├── 01-learn basics/
+│   ├── 01_Things to know any language/
+│   ├── 02_Build-up logical thinking/
+│   ├── 03_Basic maths base problem/
+│   ├── 04_Learn_Basic_Recursion/
+│   └── 05_hashing/
+├── 02-Imp sorting tec/
+│   ├── Sorting-1/
+│   └── Sorting-2/
+├── 03-Arrays/
+│   ├── 01Easy/
+│   ├── 02Medium/
+│   └── 03Hard/
+├── 04-Binary search/
+│   ├── Binary search on 2D array/
+│   ├── Binary_Search_on_1D_array/
+│   └── Binary_Search_on_answers/
+├── 05-strings/
+│   ├── Basic and Easy string problem/
+│   └── Medium string problem/
+├── 06-linked List/
+│   ├── 01Single linked list/
+│   ├── 02Doubly linked list/
+│   ├── 03Medium Probelm of linked List/
+│   └── 04Hard Problem of Linked List/
+├── 07-Recursion/
+│   ├── 01Get a strong Hold/
+│   └── 02subseq patterns/
+├── 08-Bits Manipulation/
+│   ├── 01Learn Bits Manipulation/
+│   └── 02Adv-maths/
+├── 09-Sliding-window-and-Two-pointer/
+│   ├── 01Basic Sliding window problem/
+│   └── 02Hard Problem/
+├── 10-Stack and Queues/
+│   ├── 01basic of stack and Queues/
+│   │   ├── 01Stack/
+│   │   ├── 02Queues/
+│   │   └── 03Stack-and-Queues-application.py/
+│   └── 02Stack-problem.py/
+├── 11-Heaps/
+├── 12-Greedy/
+│   └── Basic concept for Greedy algo/
+└── 13-Binary Tree/
+    ├── 01Binary Repersention in python/
+    └── 02Problems/
+        ├── 01Traversals/
+        ├── 02medium problem/
+        └── 03Frequently-Asked-Questions.py/
+```
+
 ## Current coverage
 
 Completed work in this repository focuses on the following problem-solving patterns:
