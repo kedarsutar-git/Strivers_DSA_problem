@@ -88,7 +88,6 @@ class Solution:
         return res
     
 object = Solution()
-
 root = TreeNode(3)
 root.left = TreeNode(9)
 root.right = TreeNode(20)
