@@ -59,3 +59,32 @@ Time Complexity:O(n**2)
 Space Complexity:O(1)
 
 '''
+
+# Optimal method
+
+class Solution:
+    def CountSubarrSumodd(self,nums:list[int]) ->int:
+        ans = 0
+        even = 0
+        odd = 0
+        MOD = 10**9 + 7
+        for num in nums:
+            if num%2==0:
+                even += 1
+
+            else:
+                odd, even = even + 1, odd
+
+            ans = (ans+odd)%MOD
+
+        return ans  
+
+object = Solution()
+nums =  [1, 3, 5]
+print(object.CountSubarrSumodd(nums))
+
+'''
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+'''
