@@ -81,6 +81,6 @@ object = Solution()
 print(object.countDominantElements(nums))
 '''
 Time Complexity:O(n)
-Space Complexity:O(1)
+Space Complexity:O(1)76
 '''
 
