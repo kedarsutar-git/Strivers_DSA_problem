@@ -48,12 +48,9 @@ class Solution:
         for i in range(len(strnum)):
             if strnum[i] != "0":
                 nonzeronum += strnum[i]
-                
-
+            
         digitssum = sum(int(digts) for digts in nonzeronum)
 
-
-        print(digitssum)
         return digitssum *int(nonzeronum) 
         
 n = 10203004
