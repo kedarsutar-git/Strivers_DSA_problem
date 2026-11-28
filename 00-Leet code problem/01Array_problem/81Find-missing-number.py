@@ -54,7 +54,7 @@ Constraints:
 '''
 
 class Solution:
-    def findMissingElements(self, nums: list[int]) -> List[int]:
+    def findMissingElements(self, nums: list[int]) -> list[int]:
         nums.sort()
         minnum = min(nums)
         maxnum = max(nums)
